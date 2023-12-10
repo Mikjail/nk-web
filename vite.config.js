@@ -4,4 +4,14 @@ export default {
   server: {
     open: '/index.html',
   },
+  plugins: [
+    {
+      name: 'watch-external',
+      handleHotUpdate({ server }) {
+        server.ws.send({
+          type: 'full-reload',
+        });
+      },
+    },
+  ],
 }

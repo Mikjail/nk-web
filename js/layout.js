@@ -1,6 +1,6 @@
 const renderLayout = () => {
     // Fetch the navigation HTML
-fetch('/templates/nav.html')
+fetch('/components/topBar/nav.html')
 .then(response => response.text())
 .then(navHtml => {
     // Get the element where you want to insert the navigation

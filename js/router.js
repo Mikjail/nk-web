@@ -1,21 +1,21 @@
 const routes = {
     404: {
-        template: "/templates/404.html",
+        template: "/components/404.html",
         title: "404",
         description: "Page not found",
     },
     "/": {
-        template: "/templates/home.html",
+        template: "/components/home.html",
         title: "NK - Home",
         description: "This is the home page",
     },
     "about": {
-        template: "/templates/about.html",
+        template: "/components/about.html",
         title: "NK - About",
         description: "This is the about page",
     },
     "resume": {
-        template: "/templates/resume.html",
+        template: "/components/resume.html",
         title: "NK - Resume",
         description: "This is the resume page",
     },
