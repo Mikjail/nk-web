@@ -4,46 +4,44 @@
   align-items: center;
   background-color: transparent;
   color: #333333;
-  padding: 40px 55px;
+  padding: 2.5rem 3.4375rem;
 }
 .navbar a {
   color: #333333;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
 .navbar {
   font-family: "Mulish", sans-serif;
 }
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap");
-.navbar .right a {
-  font-weight: 900;
-}
 .navbar .middle a {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 300;
   line-height: 130%;
-  text-transform: uppercase;
-  margin: 0 40px;
+  margin: 0 2.5rem;
 }
 .navbar .right a {
+  font-weight: 900;
   display: flex;
-  padding: 12px 50px;
+  padding: 0.75rem 3.125rem;
   align-items: center;
-  gap: 10px;
-  border-radius: 15px;
+  gap: 0.625rem;
+  border-radius: 0.9375rem;
   background: var(--other-cta-main, #333);
   color: #ffffff;
   font-family: "Mulish", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 900;
   text-decoration: none;
-  box-shadow: 6px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.375rem 0.25rem 1.25rem 0px rgba(0, 0, 0, 0.2);
 }
 .navbar .logo a img {
-  width: 140px;
-  height: 40px;
+  width: 3.625rem;
+  height: 1.875rem;
   object-fit: fill;
+}
+.active {
+  font-weight: 900;
 }
