@@ -6,16 +6,20 @@
   color: var(--main-dark);
   padding: 2.5rem 3.4375rem;
 }
+
 .navbar .nav-link {
   color: var(--main-dark);
   text-decoration: none;
   margin: 0 0.625rem;
 }
 
+.nav-link.active {
+  font-weight: 900;
+}
+
 .navbar .middle a {
   font-size: 1.5rem;
   font-style: normal;
-  font-weight: 300;
   line-height: 130%;
   margin: 0 2.5rem;
 }
@@ -24,7 +28,4 @@
   width: 3.625rem;
   height: 1.875rem;
   object-fit: fill;
-}
-.active {
-  font-weight: 900;
 }
