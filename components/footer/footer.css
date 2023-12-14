@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.icon {
+  width: 1.875rem;
+  height: 1.875rem;
+}

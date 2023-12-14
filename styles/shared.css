@@ -4,17 +4,15 @@ body {
 
 .primary-btn {
   color: var(--main-light) !important;
-  font-weight: 900;
   display: flex;
-  padding: 0.75rem 3.125rem;
+  padding: 0.7rem 2.5rem;
   align-items: center;
   gap: 0.625rem;
-  border-radius: 0.9375rem;
+  border-radius: 0.8rem;
   background: var(--main-dark);
   font-family: "Mulish", sans-serif;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 900;
+  font-size: var(--body);
+  font-weight: var(--semibold);
   text-decoration: none;
   box-shadow: var(--cta-shadow);
 }
