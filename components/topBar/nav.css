@@ -33,10 +33,10 @@
 
 .container {
   display: flex;
-  height: 583px;
+  height: 36.4375rem;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 55px;
+  margin: 0 3.4375rem;
 }
 
 .image-container {
@@ -47,7 +47,7 @@
   width: 85%;
   height: auto;
   object-fit: fill;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   box-shadow: var(--cta-shadow);
 }
 
@@ -57,39 +57,17 @@
 
 .text-container h3 {
   font-size: var(--heading4);
-  font-weight: var(--font-semibold);
+  font-weight: var(--semibold);
   color: var(--main-dark);
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .text-container p {
-  font: var(--body);
-  font-size: var(--font-regular);
+  font-size: var(--body);
+  font-weight: var(--regular);
   color: var(--main-dark);
   line-height: 150%;
-  font-size: var(--body);
   word-wrap: break-word;
   margin-top: 0;
-  margin-bottom: 15px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: transparent;
-}
-
-.footer-text {
-  margin: 0;
-}
-
-.footer-icons {
-  display: flex;
-  gap: 2rem;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
+  margin-bottom: 0.9375rem;
 }
