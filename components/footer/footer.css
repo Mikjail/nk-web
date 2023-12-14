@@ -1,8 +1,12 @@
-footer {
+.footer-content {
+  height: 6.3125rem;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
+  margin: 1rem 3.4375rem 1rem 3.4375rem;
+  padding: 0;
   background-color: transparent;
+  color: var(--main-dark);
 }
 
 .footer-text {
@@ -11,10 +15,11 @@ footer {
 
 .footer-icons {
   display: flex;
+  justify-content: flex-end;
   gap: 2rem;
 }
 
-.icon {
+.footer-icons img {
   width: 1.875rem;
   height: 1.875rem;
 }

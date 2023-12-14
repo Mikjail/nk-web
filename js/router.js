@@ -10,7 +10,7 @@ const routes = {
     description: "This is the home page",
   },
   about: {
-    template: "/components/about.html",
+    template: "/components/about/about.html",
     title: "NK - About",
     description: "This is the about page",
   },

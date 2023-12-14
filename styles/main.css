@@ -1,3 +1,5 @@
 @import url("variables.css");
 @import url("shared.css");
 @import url("../components/topBar/nav.css");
+@import url("../components/about/about.css");
+@import url("../components/footer/footer.css");
