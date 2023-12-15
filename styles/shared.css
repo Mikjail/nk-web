@@ -16,3 +16,13 @@ body {
   text-decoration: none;
   box-shadow: var(--cta-shadow);
 }
+
+.regular-text {
+  font-size: var(--body);
+  font-weight: var(--regular);
+  color: var(--main-dark);
+  line-height: 150%;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin-bottom: 0.9375rem;
+}

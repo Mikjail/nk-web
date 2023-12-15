@@ -28,13 +28,3 @@
   color: var(--main-dark);
   margin-bottom: 1.5rem;
 }
-
-.text-container p {
-  font-size: var(--body);
-  font-weight: var(--regular);
-  color: var(--main-dark);
-  line-height: 150%;
-  word-wrap: break-word;
-  margin-top: 0;
-  margin-bottom: 0.9375rem;
-}
