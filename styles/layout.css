@@ -1,0 +1,10 @@
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  position: fixed;
+  background: black;
+  width: 100%;
+  z-index: 1;
+}

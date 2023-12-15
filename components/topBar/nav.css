@@ -1,10 +1,13 @@
 .navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   color: var(--main-dark);
   padding: 2.5rem 3.4375rem;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar .nav-link {
@@ -14,7 +17,7 @@
 }
 
 .nav-link.active {
-  font-weight: 600;
+  font-weight: var(--black);
 }
 
 .navbar .middle a {
@@ -28,5 +31,4 @@
   width: 4rem;
   height: 1.5rem;
   object-fit: fill;
-  padding: 0.7rem 2.5rem;
 }

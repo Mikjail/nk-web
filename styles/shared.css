@@ -1,7 +1,3 @@
-body {
-  font-family: "Mulish", sans-serif;
-}
-
 .primary-btn {
   color: var(--main-light) !important;
   display: flex;
