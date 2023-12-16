@@ -8,7 +8,7 @@
   background: var(--main-dark);
   font-family: "Mulish", sans-serif;
   font-size: var(--body);
-  font-weight: var(--semibold);
+  font-weight: var(--black);
   text-decoration: none;
   box-shadow: var(--cta-shadow);
 }
