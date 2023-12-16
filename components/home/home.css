@@ -37,3 +37,15 @@
 .arrow {
   margin-left: 1rem;
 }
+
+.case-study {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9.75rem;
+    height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
