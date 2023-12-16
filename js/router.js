@@ -5,7 +5,7 @@ const routes = {
     description: "Page not found",
   },
   "/": {
-    template: "/components/home.html",
+    template: "/components/home/home.html",
     title: "NK - Home",
     description: "This is the home page",
   },
