@@ -1,17 +1,17 @@
 export default {
-  root: './',
-  base: './',
+  root: "./",
+  base: "./",
   server: {
-    open: '/',
+    open: "/",
   },
   plugins: [
     {
-      name: 'watch-external',
+      name: "watch-external",
       handleHotUpdate({ server }) {
         server.ws.send({
-          type: 'full-reload',
+          type: "full-reload",
         });
       },
     },
   ],
-}
+};

@@ -1,9 +1,9 @@
-const Nav = () => {
-    return /*html*/`
+export const Nav = () => {
+  return /*html*/ `
     <div class="navbar">
     <div class="logo">
       <a href="your-homepage-url">
-        <img src="../../assets/logo.png" alt="Your Logo" />
+        <img src="assets/logo.png" alt="Your Logo" />
       </a>
     </div>
     <div class="middle">

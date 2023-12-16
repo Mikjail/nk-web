@@ -1,5 +1,5 @@
-const Footer = () => {
-  return /*html*/`
+export const Footer = () => {
+  return /*html*/ `
   <div class="footer-content">
     <p class="footer-text">
       Get in touch with me at <strong>anastasiiakiias@gmail.com</strong>
@@ -16,6 +16,7 @@ const Footer = () => {
   </a>
 </div>
   </div>
-`}
+`;
+};
 
 document.getElementById("footer").innerHTML = Footer();

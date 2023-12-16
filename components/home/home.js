@@ -12,7 +12,7 @@ export const Home = () => /*html*/ `
     <div class="main-text">
       <h4>My case studies</h4>
       <img
-        src="../../assets/arrow-down-bold.svg"
+        src="assets/arrow-down-bold.svg"
         alt="Arrow down"
         class="arrow"
       />
