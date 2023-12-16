@@ -22,3 +22,24 @@
   margin-top: 0;
   margin-bottom: 0.9375rem;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Mulish", sans-serif;
+  margin-top: 0;
+  color: var(--main-dark);
+  line-height: 140%;
+}
+
+p {
+  font-family: "Mulish", sans-serif;
+  font-size: var(--body);
+  font-weight: var(--regular);
+  color: var(--main-dark);
+  line-height: 150%;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin-bottom: 0.9375rem;
+}

@@ -17,29 +17,23 @@
   font-size: var(--heading3);
   font-weight: var(--light);
   width: 48.125rem;
-  z-index: 2;
-}
-
-.landing-page h4 {
-  color: var(--main-dark);
-  font-size: var(--heading4);
-  font-weight: var(--black);
-  width: 48.125rem;
-  z-index: 2;
-  margin-top: 7rem;
+  line-height: 140%;
 }
 
 .landing-page__strong {
   font-weight: var(--semibold);
 }
 
-.h4-container {
+.main-text {
+  font-size: var(--heading4);
+  font-weight: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 6rem;
 }
 
-.next-to-h4 {
-  margin-left: 1.5rem;
+.arrow {
+  margin-left: 1rem;
 }
