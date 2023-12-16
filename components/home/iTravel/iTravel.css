@@ -1,0 +1,22 @@
+.i-travel__tags {
+    font-weight: var(--bold);
+}
+
+.i-travel__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.i-travel__description {
+    margin-bottom: 15px;
+}
+
+.i-travel__tags {
+    font-weight: var(--bold);
+}
+
+.i-travel {
+    height: 70vh;
+}

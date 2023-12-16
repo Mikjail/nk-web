@@ -8,7 +8,7 @@
   background: var(--main-dark);
   font-family: "Mulish", sans-serif;
   font-size: var(--body);
-  font-weight: var(--semibold);
+  font-weight: var(--black);
   text-decoration: none;
   box-shadow: var(--cta-shadow);
 }
@@ -21,4 +21,39 @@
   word-wrap: break-word;
   margin-top: 0;
   margin-bottom: 0.9375rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Mulish", sans-serif;
+  margin-top: 0;
+  color: var(--main-dark);
+  line-height: 140%;
+}
+
+p {
+  font-family: "Mulish", sans-serif;
+  font-size: var(--body);
+  font-weight: var(--regular);
+  color: var(--main-dark);
+  line-height: 150%;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin-bottom: 0.9375rem;
+}
+
+.main-title {
+  color: var(--main-green);
+  font-weight: var(--black);
+  font-size: var(--heading1);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--main-dark);
+  font-weight: var(--bold);
+  font-size: var(--heading2);
+  margin-bottom: 1rem;
 }

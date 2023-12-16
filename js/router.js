@@ -1,3 +1,7 @@
+import { Home } from "../components/home/home.js";
+import { About } from "../components/about/about.js";
+import { Resume } from "../components/resume/resume.js";
+
 const routes = {
   404: {
     template: "/components/404.html",
@@ -5,17 +9,17 @@ const routes = {
     description: "Page not found",
   },
   "/": {
-    template: "/components/home/home.html",
+    template: Home(),
     title: "NK - Home",
     description: "This is the home page",
   },
   about: {
-    template: "/components/about/about.html",
+    template: About(),
     title: "NK - About",
     description: "This is the about page",
   },
   resume: {
-    template: "/components/resume.html",
+    template: Resume(),
     title: "NK - Resume",
     description: "This is the resume page",
   },
@@ -33,7 +37,7 @@ const locationHandler = async () => {
   const route = routes[location] || routes["404"];
 
   // get the html from the template
-  const html = await fetch(route.template).then((response) => response.text());
+  const html = route.template;
 
   // set the content of the content div to the html
   document.getElementById("content").innerHTML = html;

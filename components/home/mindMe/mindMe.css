@@ -1,0 +1,18 @@
+.mind-me__img {
+    width: 21.625rem;
+}
+
+.mind-me__tags {
+    font-weight: var(--bold);
+}
+
+.mind-me__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.mind-me__description {
+    margin-bottom: 15px;
+}
