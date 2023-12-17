@@ -7,7 +7,7 @@ export const Nav = () => {
       </a>
     </div>
     <div class="middle">
-      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="">Home</a>
       <a class="nav-link" href="#about">About</a>
       <a class="nav-link" href="#resume">Resume</a>
     </div>

@@ -14,7 +14,7 @@ export const MindMe = () => /*html*/ `
     <p class="mind-me__tags">UX Research | UI Design | Testing</p>
     ${Button({
       text: "View",
-      href: "/#mind-me",
+      href: "#mind-me",
       variant: "secondary",
     })}
   </div>
