@@ -8,8 +8,8 @@ export const ITravel = () => /*html*/ `
     <h2 class="i-travel__subtitle subtitle">Travel Planner App</h2>
     <p class="i-travel__description">
         A mobile app that helps users plan their trips and activities with seamless
-        integration, personalized recommendations, and streamlined itinerary management,
-        making it enjoyable and efficient
+        integration, personalized recommendations, and itinerary management,
+        making it enjoyable and efficient.
     </p>
     <p class="i-travel__tags">UX Research | UI Design</p>
     ${Button({

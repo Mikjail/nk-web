@@ -9,7 +9,7 @@ export const MindMe = () => /*html*/ `
     <p class="mind-me__description">
       A mobile app designed to provide comprehensive mental health support for
       individuals and help them navigate and overcome different mental health
-      issues effectively
+      issues effectively.
     </p>
     <p class="mind-me__tags">UX Research | UI Design | Testing</p>
     ${Button({

@@ -1,15 +1,15 @@
-.beanfesto__left {
+.beanifesto__left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
 }
 
-.beanfesto__description {
+.beanifesto__description {
     margin-bottom: 15px;
 }
 
-.beanfesto__tags {
+.beanifesto__tags {
     font-weight: var(--bold);
     margin-bottom: 3.125rem;
 }

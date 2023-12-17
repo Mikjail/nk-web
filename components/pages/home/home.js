@@ -1,5 +1,5 @@
 import { MindMe } from "./mindMe/mindMe.js";
-import { Beanfesto } from "./beanfesto/beanfesto.js";
+import { Beanifesto } from "./beanifesto/beanifesto.js";
 import { ITravel } from "./iTravel/iTravel.js";
 import { Form } from "./form/form.js";
 
@@ -20,7 +20,7 @@ export const Home = () => /*html*/ `
   </div>
   </section>
   ${MindMe()}
-  ${Beanfesto()}
+  ${Beanifesto()}
   ${ITravel()}
   ${Form()}
  `;
