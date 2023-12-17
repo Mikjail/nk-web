@@ -1,6 +1,6 @@
-import { Home } from "../components/home/home.js";
-import { About } from "../components/about/about.js";
-import { Resume } from "../components/resume/resume.js";
+import { Home } from "../components/pages/home/home.js";
+import { About } from "../components/pages/about/about.js";
+import { Resume } from "../components/pages/resume/resume.js";
 
 const routes = {
   404: {
