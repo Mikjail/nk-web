@@ -1,7 +1,7 @@
 import { Button } from "../../../button/button.js";
 
 export const Beanifesto = () => /*html*/ `
-<section class="beanifesto case-study">
+<section class="beanifesto case-study xl">
     <div class="beanifesto__left">
         <h1 class="beanifesto__title main-title">Beanifesto</h1>
         <h2 class="beanifesto__subtitle subtitle">E - Commerce App</h2>

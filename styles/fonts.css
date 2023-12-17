@@ -1,1 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;900&display=swap");
+
+@font-face {
+    font-family: 'Trap';
+    src: url('/assets/trap-black.otf') format('opentype');
+}

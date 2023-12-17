@@ -60,3 +60,7 @@ p {
   font-size: var(--heading2);
   margin-bottom: 1rem;
 }
+
+.xl {
+  max-width: 1200px;
+}

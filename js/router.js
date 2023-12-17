@@ -1,6 +1,7 @@
 import { Home } from "../components/pages/home/home.js";
 import { About } from "../components/pages/about/about.js";
 import { Resume } from "../components/pages/resume/resume.js";
+import { mindMeCase } from "../components/pages/mindMeCase/mindMeCase.js";
 
 const routes = {
   404: {
@@ -22,6 +23,11 @@ const routes = {
     template: Resume(),
     title: "NK - Resume",
     description: "This is the resume page",
+  },
+  "mind-me": {
+    template: mindMeCase(),
+    title: "NK - Resume",
+    description: "MindMe - Case Study",
   },
 };
 

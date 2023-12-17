@@ -39,13 +39,12 @@
 }
 
 .case-study {
-  display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 9.75rem;
     height: 80vh;
     width: 100%;
-    max-width: 1200px;
     margin: auto;
 }

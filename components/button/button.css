@@ -21,3 +21,9 @@
     color: var(--main-dark) !important;
     background-color: var(--secondary-green);
 }
+
+.custom-btn.case1-green {
+    color: var(--main-light) !important;
+    background-color: var(--case1-green) !important;
+    
+}

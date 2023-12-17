@@ -1,7 +1,7 @@
 import { Button } from "../../../button/button.js";
 
 export const ITravel = () => /*html*/ `
-<section class="i-travel case-study">
+<section class="i-travel case-study xl">
   <img src="assets/i-travel.svg" alt="" class="i-travel__img"/>
   <div class="i-travel__right">
     <h1 class="i-travel__title main-title">ITravel</h1>
