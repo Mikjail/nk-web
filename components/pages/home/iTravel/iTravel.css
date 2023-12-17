@@ -15,8 +15,10 @@
 
 .i-travel__tags {
     font-weight: var(--bold);
+    margin-bottom: 3.125rem;
 }
 
 .i-travel {
     height: 70vh;
 }
+

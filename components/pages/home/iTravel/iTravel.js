@@ -1,3 +1,5 @@
+import { Button } from "../../../button/button.js";
+
 export const ITravel = () => /*html*/ `
 <section class="i-travel case-study">
   <img src="assets/i-travel.svg" alt="" class="i-travel__img"/>
@@ -10,6 +12,11 @@ export const ITravel = () => /*html*/ `
         making it enjoyable and efficient
     </p>
     <p class="i-travel__tags">UX Research | UI Design</p>
+    ${Button({
+      text: "View",
+      href: "/",
+      variant: "secondary",
+    })}
   </div>
 </section>
 `;

@@ -1,3 +1,5 @@
+import { Button } from "../../../button/button.js";
+
 export const MindMe = () => /*html*/ `
 <section class="mind-me case-study">
   <img src="assets/mind-me.svg" alt="" class="mind-me__img"/>
@@ -10,5 +12,10 @@ export const MindMe = () => /*html*/ `
       issues effectively
     </p>
     <p class="mind-me__tags">UX Research | UI Design | Testing</p>
+    ${Button({
+      text: "View",
+      href: "/",
+      variant: "secondary",
+    })}
   </div>
 </section>`;

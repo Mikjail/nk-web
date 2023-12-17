@@ -5,14 +5,11 @@
     width: 100%;
 }
 
-.beanfesto img {
-    width: 25.3125rem;
-}
-
 .beanfesto__description {
     margin-bottom: 15px;
 }
 
 .beanfesto__tags {
     font-weight: var(--bold);
+    margin-bottom: 3.125rem;
 }

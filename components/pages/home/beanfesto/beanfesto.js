@@ -1,3 +1,5 @@
+import { Button } from "../../../button/button.js";
+
 export const Beanfesto = () => /*html*/ `
 <section class="beanfesto case-study">
     <div class="beanfesto__left">
@@ -11,6 +13,11 @@ export const Beanfesto = () => /*html*/ `
         <p class="beanfesto__tags">
             UX Research | UI Design
         </p>
+        ${Button({
+          text: "View",
+          href: "/",
+          variant: "secondary",
+        })}
     </div>
     <img class="beanfesto__img" src="assets/beanfesto.svg" alt="">
 </section>`;

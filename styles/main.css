@@ -3,6 +3,7 @@
 @import url("variables.css");
 @import url("layout.css");
 @import url("shared.css");
+@import url("../components/button/button.css");
 @import url("../components/topBar/nav.css");
 @import url("../components/pages/about/about.css");
 @import url("../components/footer/footer.css");
@@ -12,3 +13,4 @@
 @import url("../components/pages/home/iTravel/iTravel.css");
 @import url("../components/pages/resume/resume.css");
 @import url("../components/pages/home/form/form.css");
+

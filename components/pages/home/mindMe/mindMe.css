@@ -1,9 +1,6 @@
-.mind-me__img {
-    width: 21.625rem;
-}
-
 .mind-me__tags {
     font-weight: var(--bold);
+    margin-bottom: 3.125rem;
 }
 
 .mind-me__left {
