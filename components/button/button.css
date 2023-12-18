@@ -1,29 +1,28 @@
 .custom-btn {
-    display: flex;
-    padding: 0.7rem 2.5rem;
-    align-items: center;
-    justify-content: center;
-    gap: 0.625rem;
-    border-radius: 0.8rem;
-    font-size: var(--body);
-    font-weight: var(--black);
-    text-decoration: none;
-    box-shadow: var(--cta-shadow);
-    width: 12.8125rem;
+  display: flex;
+  padding: 0.7rem 2.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  border-radius: 0.8rem;
+  font-size: var(--body);
+  font-weight: var(--black);
+  text-decoration: none;
+  box-shadow: var(--cta-shadow);
+  width: 12.8125rem;
 }
 
 .custom-btn.primary {
-    color: var(--main-light) !important;
-    background: var(--main-dark);
+  color: var(--main-light) !important;
+  background: var(--main-dark);
 }
 
 .custom-btn.secondary {
-    color: var(--main-dark) !important;
-    background-color: var(--secondary-green);
+  color: var(--main-dark) !important;
+  background-color: var(--secondary-green);
 }
 
 .custom-btn.case1-green {
-    color: var(--main-light) !important;
-    background-color: var(--case1-green) !important;
-    
+  color: var(--main-light) !important;
+  background-color: var(--case1-green) !important;
 }
