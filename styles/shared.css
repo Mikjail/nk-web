@@ -64,3 +64,11 @@ p {
 .xl {
   max-width: 1200px;
 }
+
+.cases__h3 {
+  font-weight: var(--bold);
+  font-size: var(--heading4);
+  color: var(--main-dark);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}

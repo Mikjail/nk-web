@@ -11,7 +11,7 @@ export const mindMeCase = () => /*html*/ `
         different mental health issues effectively
         </p>
         ${Button({
-          text: "PROTOTYPE",
+          text: "Prototype",
           href: "/",
           variant: "case1-green",
           className: "mind-me-case__btn",
