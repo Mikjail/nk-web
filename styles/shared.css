@@ -63,12 +63,12 @@ p {
 
 .xl {
   max-width: 1200px;
+  margin: auto;
 }
 
-.cases__h3 {
+.cases__h4 {
   font-weight: var(--bold);
   font-size: var(--heading4);
   color: var(--main-dark);
   margin-bottom: 1.5rem;
-  text-transform: uppercase;
 }
