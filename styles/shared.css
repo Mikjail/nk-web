@@ -31,9 +31,10 @@ h2,
 h3,
 h4 {
   font-family: "Mulish", sans-serif;
-  margin-top: 0;
+  margin-top: 2rem;
+  margin-bottom: 0;
   color: var(--main-dark);
-  line-height: 140%;
+  line-height: 130%;
 }
 
 p {
@@ -51,7 +52,6 @@ p {
   color: var(--main-green);
   font-weight: var(--black);
   font-size: var(--heading1);
-  margin-bottom: 1rem;
 }
 
 .subtitle {
@@ -63,4 +63,12 @@ p {
 
 .xl {
   max-width: 1200px;
+}
+
+.cases__h3 {
+  font-weight: var(--bold);
+  font-size: var(--heading4);
+  color: var(--main-dark);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }

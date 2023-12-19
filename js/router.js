@@ -2,6 +2,7 @@ import { Home } from "../components/pages/home/home.js";
 import { About } from "../components/pages/about/about.js";
 import { Resume } from "../components/pages/resume/resume.js";
 import { mindMeCase } from "../components/pages/mindMeCase/mindMeCase.js";
+import { BeanifestoCase } from "../components/pages/beanifestoCase/beanifesto.js";
 
 const routes = {
   404: {
@@ -28,6 +29,11 @@ const routes = {
     template: mindMeCase(),
     title: "NK - Resume",
     description: "MindMe - Case Study",
+  },
+  beanifesto: {
+    template: BeanifestoCase(),
+    title: "NK - Beanifesto",
+    description: "This is the beanifesto page",
   },
 };
 
