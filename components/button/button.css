@@ -26,3 +26,11 @@
   color: var(--main-light) !important;
   background-color: var(--case1-green) !important;
 }
+
+.custom-btn.cases__btn {
+  width: 17rem;
+  height: 3rem;
+  padding: 0.9375rem 3.125rem;
+  color: var(--main-light);
+  margin-top: 1rem;
+}
