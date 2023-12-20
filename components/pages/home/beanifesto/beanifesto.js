@@ -15,7 +15,7 @@ export const Beanifesto = () => /*html*/ `
         </p>
         ${Button({
           text: "View",
-          href: "/",
+          href: "/#beanifesto",
           variant: "secondary",
         })}
     </div>

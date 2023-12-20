@@ -1,24 +1,19 @@
 .i-travel__tags {
-    font-weight: var(--bold);
+  font-weight: var(--bold);
+  margin-bottom: 2.5rem;
 }
 
 .i-travel__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .i-travel__description {
-    margin-bottom: 15px;
-}
-
-.i-travel__tags {
-    font-weight: var(--bold);
-    margin-bottom: 3.125rem;
+  margin-bottom: 15px;
 }
 
 .i-travel {
-    height: 70vh;
+  height: 70vh;
 }
-

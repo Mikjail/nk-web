@@ -1,15 +1,15 @@
 .mind-me__tags {
-    font-weight: var(--bold);
-    margin-bottom: 3.125rem;
+  font-weight: var(--bold);
+  margin-bottom: 2.5rem;
 }
 
 .mind-me__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .mind-me__description {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
