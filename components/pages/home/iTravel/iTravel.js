@@ -14,7 +14,7 @@ export const ITravel = () => /*html*/ `
     <p class="i-travel__tags">UX Research | UI Design</p>
     ${Button({
       text: "View",
-      href: "/",
+      href: "#itravel",
       variant: "secondary",
     })}
   </div>
