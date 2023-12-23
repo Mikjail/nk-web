@@ -37,7 +37,9 @@ h4 {
   line-height: 130%;
 }
 
-p {
+p,
+ul,
+ol {
   font-family: "Mulish", sans-serif;
   font-size: var(--body);
   font-weight: var(--regular);
@@ -106,4 +108,32 @@ p {
   display: flex;
   flex-direction: column;
   width: 35.3125rem;
+}
+
+.title__description {
+  font-weight: var(--light);
+  font-size: 1.6rem;
+  color: var(--main-dark);
+  width: 45rem;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.cases__img1--margin {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: -1.5rem;
+}
+
+.cases__img2--margin {
+  width: 60%;
+  margin: 3rem auto;
+  margin-bottom: 4rem;
+  display: block;
+}
+
+.cases__img1 {
+  display: flex;
+  margin-top: 1.5rem;
 }

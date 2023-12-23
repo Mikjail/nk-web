@@ -1,0 +1,22 @@
+.itravel__case {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cases__mockups {
+  max-width: 40%;
+  margin-top: 2rem;
+}
+
+.itravel__name {
+  margin-top: 5rem;
+  font-size: 4rem;
+}
+
+.title__description--itravel {
+  width: 30rem;
+  margin-top: 1.5rem;
+}

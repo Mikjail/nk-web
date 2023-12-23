@@ -8,16 +8,6 @@
   gap: 2rem;
 }
 
-.beanifesto-case__h1 {
-  font-weight: var(--regular);
-  font-size: 1.6rem;
-  color: var(--main-dark);
-  width: 40rem;
-  line-height: 130%;
-  text-align: center;
-  margin-top: 0;
-}
-
 .beanifesto-case__mockups {
   max-width: 65%;
 }
@@ -30,29 +20,12 @@
   background-color: var(--case2-green);
 }
 
-.beanifesto__img1 {
-  display: flex;
-  margin-top: 3rem;
-}
-
-.beanifesto__img1--margin {
-  display: flex;
-  margin-top: 3rem;
-  margin-bottom: -1.5rem;
-}
-
 .beanifesto__img2 {
   width: 60%;
   display: block;
 }
 
-.beanifesto__img2--margin {
-  width: 60%;
-  margin: 3rem auto;
-  display: block;
-}
-
-.beanifesto-case__column li {
+.beanifesto-cases__column li {
   font-weight: var(--regular);
   font-size: var(--body);
   color: var(--main-dark);

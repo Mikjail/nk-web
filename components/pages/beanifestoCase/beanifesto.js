@@ -3,7 +3,7 @@ export const BeanifestoCase = () => /*html*/ `
 
 <section class="beanifesto-case__main xl">
 <img class="beanifesto-case-name__img" src="assets/beanifesto-name.svg" alt="App Name">
-  <h1 class="beanifesto-case__h1"> an Engaging and Sustainable Coffee Product App</h1>
+  <h1 class="title__description"> an Engaging and Sustainable Coffee Product App</h1>
   <img class="beanifesto-case__mockups" src="assets/beanifesto-mockups.svg" alt="Screen Mockups">
   ${Button({
           text: "Prototype",
@@ -23,7 +23,7 @@ export const BeanifestoCase = () => /*html*/ `
     <p>Coffee lovers often find themselves lost in a sea of options, seeking an intuitive platform that not only assists in product discovery but also promotes sustainable coffee choices.</p>
 </section>
 
-<img class="xl beanifesto__img1--margin" src="assets/beans.jpg" alt="Coffee beans image">
+<img class="xl cases__img1--margin" src="assets/beans.jpg" alt="Coffee beans image">
 
 <section class="cases__sections xl">
   <h4 class="cases__h4">PROCESS</h4>
@@ -41,18 +41,18 @@ export const BeanifestoCase = () => /*html*/ `
       <p>2 weeks</p>
 </section>
 
-<img class="beanifesto__img2--margin" src="assets/beanifesto-process.jpg" alt="Case process">
+<img class="cases__img2--margin" src="assets/beanifesto-process.jpg" alt="Case process">
 
 <section class="cases__sections xl">
   <h4 class="cases__h4">VISUAL DESIGN</h4>
     <p>For Beanifesto's visual identity, I picked a warm, inviting brown as primary color reminiscent of roasted coffee beans, while the vibrant accent green color adds an engaging touch. I used <strong>"Abril Fatface"</strong> for headings to impart elegance and <strong>"Lato"</strong> for the body for readability, creating a balanced, user-friendly experience that mirrors the richness of coffee.</p>
-  <img class="beanifesto__img1" src="assets/beanifesto-colors.jpg" alt="Colors and Font">
+  <img class="cases__img1" src="assets/beanifesto-colors.jpg" alt="Colors and Font">
 </section>
 
 <section class="cases__sections xl">
   <h4 class="cases__h4">INITIAL WIREFRAMES</h4> 
     <p>In the high-fidelity wireframes, I transformed the conceptual into the tangible. The careful integration of color palettes, typography, and user interface components ensured that the user journey was not only smooth but also visually interesting, immersing coffee lovers in <strong>welcoming and engaging digital coffee marketplace.</strong></p>
-  <img class="beanifesto__img2--margin" src="assets/beanifesto-wireframes.jpg" alt="Mobile screens with design">
+  <img class="cases__img2--margin" src="assets/beanifesto-wireframes.jpg" alt="Mobile screens with design">
 </section>
 
 <section class="beanifesto-case__columns1 beanifesto-case__sections xl">
@@ -66,7 +66,7 @@ export const BeanifestoCase = () => /*html*/ `
       <p>This encourages users to not only enjoy their coffee but also stay engaged with Beanifesto, fostering a sense of loyalty and excitement with every cup they brew.</p>
   </div>
   <div class="cases__column">
-    <img class="beanifesto__img1" src="assets/beanifesto-game.jpg" alt="Gamification screens"> </div>
+    <img class="cases__img1" src="assets/beanifesto-game.jpg" alt="Gamification screens"> </div>
 </section>
 
 <section class="cases__sections xl">
@@ -76,10 +76,10 @@ export const BeanifestoCase = () => /*html*/ `
 
 <section class="cases__sections beanifesto-case__columns1 xl">
   <div class="cases__column">
-    <img class="beanifesto__img1" src="assets/beanifesto-iteration1.jpg" alt="Iteration screens 1"> </div>
+    <img class="cases__img1" src="assets/beanifesto-iteration1.jpg" alt="Iteration screens 1"> </div>
   <div class="cases__column">
     <h4 class="cases__h4">Categories section, search bar, cart icon</h4>
-  <ol class="beanifesto-case__column li">
+  <ol class="beanifesto-cases__column li">
     <li>Users were <strong>confused by scrolling categories along with the content</strong> and found it challenging to access them, <strong>impacting usability.</strong> To enhance navigation and user-friendliness, I made several key changes. First, I fixed the categories in place on the page, ensuring they remained visible while users scrolled. Additionally, to optimize space at the top, I replaced the top search bar with a discreet search icon in the right top corner, allowing for a cleaner and more streamlined interface while still providing easy access to search functionality.</li>
     <li>Placing the cart icon in the Bottom nav bar caused <strong>difficulty and confusion for users</strong> accustomed to its typical location in the Top bar. To enhance user experience, I moved the cart icon to the Top bar for easier access to shopping carts. In addition to this change, I removed the burger menu and introduced a profile icon in the Bottom nav bar, simplifying navigation and providing users with a more intuitive way to access their profiles and account settings.</li>
   </ol>
@@ -95,7 +95,7 @@ export const BeanifestoCase = () => /*html*/ `
   </ol>
   </div>
   <div class="cases__column">
-    <img class="beanifesto__img1" src="assets/beanifesto-iteration2.jpg" alt="Iteration screens 2"> </div>
+    <img class="cases__img1" src="assets/beanifesto-iteration2.jpg" alt="Iteration screens 2"> </div>
 </section>
 
 <section class="cases__sections cases__columns xl">
