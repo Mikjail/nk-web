@@ -3,6 +3,7 @@ import { About } from "../components/pages/about/about.js";
 import { Resume } from "../components/pages/resume/resume.js";
 import { mindMeCase } from "../components/pages/mindMeCase/mindMeCase.js";
 import { BeanifestoCase } from "../components/pages/beanifestoCase/beanifesto.js";
+import { iTravelCase } from '../components/pages/iTravelCase/itravelcase.js';
 
 const routes = {
   404: {
@@ -34,6 +35,11 @@ const routes = {
     template: BeanifestoCase(),
     title: "NK - Beanifesto",
     description: "This is the beanifesto page",
+  },
+  "itravel": {
+    template: iTravelCase(),
+    title: "NK - iTravel",
+    description: "This is the iTravel page",
   },
 };
 
