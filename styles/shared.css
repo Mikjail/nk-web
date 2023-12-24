@@ -137,3 +137,15 @@ ol {
   display: flex;
   margin-top: 1.5rem;
 }
+
+.cases__img2 {
+  width: 60%;
+  display: block;
+}
+
+.cases__video {
+  width: 40%;
+  height: auto;
+  margin-top: 1.5rem;
+  border-radius: 2rem;
+}

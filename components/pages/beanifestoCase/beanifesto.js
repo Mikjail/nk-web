@@ -102,11 +102,11 @@ export const BeanifestoCase = () => /*html*/ `
   <div class="cases__column">
     <h4 class="cases__h4">PROTOTYPE</h4>
       <p>Press <a href="https://www.figma.com/proto/gHkpWdf7CzUWwPEWoPEsHQ/Project3_Anastasiia?page-id=4%3A10&type=design&node-id=812-994&viewport=408%2C295%2C0.13&t=NIF5Dbb1Q1rPzB2Q-1&scaling=scale-down&starting-point-node-id=812%3A994&mode=design" target="_blank"><u>here</u></a> to access the prototype</p>
-    <img class="beanifesto__img2" src="assets/beanifesto-prototype.jpg" alt="Beanifesto screens">
+    <img class="cases__img2" src="assets/beanifesto-prototype.jpg" alt="Beanifesto screens">
   </div>
   <div class="cases__column">
     <h4 class="cases__h4">SCREEN RECORDING</h4>
-      <video class="beanifesto__video" controls autoplay muted>
+      <video class="cases__video" controls autoplay muted>
       <source src="assets/beanifesto-video.mp4" type="video/mp4">
       </video>
 </section>

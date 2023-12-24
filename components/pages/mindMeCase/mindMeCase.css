@@ -1,60 +1,37 @@
 .mind-me-case {
-    display: flex;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: center;
-    margin:auto;
-    gap: 5rem;
-}
-
-.mind-me-case__section2 {
-    height: 100vh;
-    margin:auto;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  gap: 5rem;
 }
 
 .mind-me-case__title {
-    font-family: 'Trap';
-    font-size: 5rem;
-    text-decoration: underline;
-    color: var(--case1-green);
-    margin-bottom: 2rem;
+  font-family: "Trap";
+  font-size: 5rem;
+  text-decoration: underline;
+  color: var(--case1-green);
+  margin-bottom: 2rem;
 }
 
 .mind-me-case__description {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mind-me-case__img {
-    width: 20rem;
-}
-
-.mind-me-case__right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 20rem;
 }
 
 .mind-me-case__btn {
-    font-weight: var(--bold);
-    width: 21.4375rem;
+  font-weight: var(--bold);
+  width: 21.4375rem;
 }
 
-.mind-me-case__role-timeline {
-    display: grid;
-    justify-content: space-between;
-    gap: 24rem;
-    margin-top: 2rem;
-    grid-template-columns: 26rem 1fr;
+.cases__sections--margin {
+  margin-top: 0;
 }
 
-.mind-me-case__timeline {
-   padding-right: 4rem;
+.cases__h4--margin {
+  margin-bottom: 0;
 }
-
-.mind-me-case__timeline p {
-    margin: 0;
-}
-.mind-me-case__problem p{
-    margin-top: 1rem;
-}
-
