@@ -1,14 +1,32 @@
 body {
   font-family: "Mulish", sans-serif;
+
+}
+
+main {
+  grid-area: main;
 }
 
 header {
+  grid-area: header;
   position: fixed;
-  background: black;
   width: 100%;
   z-index: 1;
 }
 
 footer {
+  grid-area: footer;
+  bottom: 0;
   height: 10vh;
+
 }
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+}
+

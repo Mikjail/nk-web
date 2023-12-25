@@ -3,7 +3,8 @@ import { About } from "../components/pages/about/about.js";
 import { Resume } from "../components/pages/resume/resume.js";
 import { mindMeCase } from "../components/pages/mindMeCase/mindMeCase.js";
 import { BeanifestoCase } from "../components/pages/beanifestoCase/beanifesto.js";
-import { iTravelCase } from '../components/pages/iTravelCase/itravelcase.js';
+import { iTravelCase } from "../components/pages/iTravelCase/itravelcase.js";
+import { Footer } from "../components/footer/footer.js";
 
 const routes = {
   404: {
@@ -36,7 +37,7 @@ const routes = {
     title: "NK - Beanifesto",
     description: "This is the beanifesto page",
   },
-  "itravel": {
+  itravel: {
     template: iTravelCase(),
     title: "NK - iTravel",
     description: "This is the iTravel page",
@@ -57,16 +58,44 @@ const locationHandler = async () => {
   // get the html from the template
   const html = route.template;
 
+  // get the content div
+  const contentDiv = document.getElementById("content");
+
+  // add the fade class to start the fade-out transition
+  contentDiv.classList.add("fade");
+
+  // wait for the transition to finish
+  await new Promise((r) => setTimeout(r, 200));
+
+  // footer
+  const footer = document.getElementById("footer");
+
+  // wait for the transition to finish
+  contentDiv.innerHTML = "";
+
+  // wait for the transition to finish
+  footer.innerHTML = "";
+
+  await new Promise((r) => setTimeout(r, 100));
+
   // set the content of the content div to the html
-  document.getElementById("content").innerHTML = html;
+  contentDiv.innerHTML = html;
+
+  // set the content of the content div to the html
+  footer.innerHTML = Footer();
+
+  // add the show class to start the fade-in transition
+  contentDiv.classList.add("show");
+
+  // wait for the transition to finish
+  await new Promise((r) => setTimeout(r, 200));
+
+  // remove the fade and show classes
+  contentDiv.classList.remove("fade", "show");
+
   // set the title of the document to the title of the route
   document.title = route.title;
-  // set the description of the document to the description of the route
-  document
-    .querySelector('meta[name="description"]')
-    .setAttribute("content", route.description);
 };
-
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
