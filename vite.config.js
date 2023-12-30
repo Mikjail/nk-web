@@ -4,9 +4,6 @@ export default {
   server: {
     open: "/",
   },
-  build: {
-    outDir: "../nastya-web-prod/", // specify your output directory
-  },
   plugins: [
     {
       name: "watch-external",
