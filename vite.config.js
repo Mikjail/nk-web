@@ -4,6 +4,9 @@ export default {
   server: {
     open: "/",
   },
+  build: {
+    outDir: "docs", // specify your output directory
+  },
   plugins: [
     {
       name: "watch-external",
