@@ -18,18 +18,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "21.x"
-      - run: npm install
-
-  build-npm:
-    needs: install
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "21.x"
-          registry-url: https://registry.npmjs.org/
+      - run: npm ci
       - run: npm run build
-      - run: npm run cname
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}

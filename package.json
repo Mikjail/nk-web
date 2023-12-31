@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "cname": "node create-cname.js",
+    "build": "vite build && node create-cname.js",
     "serve": "vite preview"
   },
   "dependencies": {
