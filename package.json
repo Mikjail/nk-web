@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "cname": "node create-cname.js",
     "serve": "vite preview"
   },
   "dependencies": {
+    "fs-extra": "^11.2.0",
     "vite": "^5.0.7"
   }
 }
