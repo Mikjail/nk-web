@@ -1,8 +1,6 @@
 .landing-page {
   position: relative;
-  background-image: url("/assets/bg.png");
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(100deg, rgba(255, 208, 242, 0.60) 21.55%, rgba(188, 252, 255, 0.60) 77.86%);
   height: 100vh;
   display: flex;
   flex-direction: column;
