@@ -11,7 +11,7 @@ on:
       - main
 
 jobs:
-  install:
+  nk-ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,3 +20,22 @@ jobs:
           node-version: "21.x"
       - run: npm ci
       - run: npm run build
+  nk-cd:
+    runs-on: ubuntu-latest
+    needs: nk-ci
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "21.x"
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
+          git add -A
+          git commit -m "Update docs after build"
+          git push`
