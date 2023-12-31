@@ -19,7 +19,7 @@ const activeRoute = (navLinks, route) => {
       link.classList.remove("active");
     }
   });
-  if (route === "") {
+  if (route === "" || route === "#contact") {
     navLinks[0].classList.add("active");
   }
 };

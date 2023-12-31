@@ -7,11 +7,6 @@ import { iTravelCase } from "../components/pages/iTravelCase/itravelcase.js";
 import { Footer } from "../components/footer/footer.js";
 
 const routes = {
-  404: {
-    template: "/components/404.html",
-    title: "404",
-    description: "Page not found",
-  },
   "/": {
     template: Home(),
     title: "NK - Home",
@@ -50,10 +45,12 @@ const locationHandler = async () => {
   // if the path length is 0, set it to primary page route
   if (location.length == 0) {
     location = "/";
+    // remove # from url
+    window.history.replaceState({}, document.title, ".");
   }
 
   // get the route object from the routes object
-  const route = routes[location] || routes["404"];
+  const route = routes[location] || routes["/"];
 
   // get the html from the template
   const html = route.template;
