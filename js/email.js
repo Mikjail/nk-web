@@ -1,3 +1,5 @@
+const EMAILJS_TEMPLATE_ID = "template_0g5u8p4";
+const EMAILJS_SERVICE_ID = "service_zd2m69w";
 window.onload = async function () {
   const onSubmit = (e) => {
     e.preventDefault();
@@ -5,8 +7,8 @@ window.onload = async function () {
     const formData = new FormData(form);
     const { name, email, message } = Object.fromEntries(formData.entries());
     emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      import.meta.env.EMAILJS_SERVICE_ID,
+      import.meta.env.EMAILJS_TEMPLATE_ID,
       {
         from_name: name,
         to_name: "Anastasiia",
