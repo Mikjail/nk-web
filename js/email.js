@@ -6,16 +6,12 @@ window.onload = async function () {
     const form = e.target;
     const formData = new FormData(form);
     const { name, email, message } = Object.fromEntries(formData.entries());
-    emailjs.send(
-      import.meta.env.EMAILJS_SERVICE_ID,
-      import.meta.env.EMAILJS_TEMPLATE_ID,
-      {
-        from_name: name,
-        to_name: "Anastasiia",
-        from_email: email,
-        message: message,
-      }
-    );
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      from_name: name,
+      to_name: "Anastasiia",
+      from_email: email,
+      message: message,
+    });
 
     form.reset();
   };
