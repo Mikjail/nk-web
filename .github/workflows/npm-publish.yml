@@ -9,9 +9,11 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "docs/**" # Ignore changes in the docs directory
 
 jobs:
-  nk-ci:
+  nk-ci-cd:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -28,5 +30,5 @@ jobs:
           git config --global user.name 'MikjailS'
           git config --global user.email 'mikjailsalazar@gmail.com'
           git add -A
-          git commit -m "Update docs after build"
+          git commit -m "feat: Deploy new changes into docs"
           git push
