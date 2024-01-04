@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const s of e)if(s.type==="childList")for(const r of s.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&n(r)}).observe(document,{childList:!0,subtree:!0});function a(e){const s={};return e.integrity&&(s.integrity=e.integrity),e.referrerPolicy&&(s.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?s.credentials="include":e.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function n(e){if(e.ep)return;e.ep=!0;const s=a(e);fetch(e.href,s)}})();const p=()=>`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();const p=()=>`
     <div class="navbar">
     <div class="logo">
       <a href="/#">
@@ -30,8 +30,8 @@
   </a>
 </div>
   </div>
-`;document.getElementById("footer").innerHTML=c();document.getElementById("nav").innerHTML=p();document.getElementById("footer").innerHTML=c();window.onload=function(){const i=document.querySelectorAll(".nav-link"),t=window.location.hash;l(i,t),window.addEventListener("hashchange",function(){const a=window.location.hash;l(i,a)})};const l=(i,t)=>{i.forEach(function(a){a.getAttribute("href")===t?a.classList.add("active"):a.classList.remove("active")}),(t===""||t==="#contact")&&i[0].classList.add("active")},o=({text:i,href:t,variant:a,className:n,target:e})=>`
-        <a class="custom-btn ${n} ${a}" href="${t}" target="${e||"_self"}">${i}</a>
+`;document.getElementById("footer").innerHTML=c();document.getElementById("nav").innerHTML=p();document.getElementById("footer").innerHTML=c();window.onload=function(){const i=document.querySelectorAll(".nav-link"),s=window.location.hash;l(i,s),window.addEventListener("hashchange",function(){const a=window.location.hash;l(i,a)})};const l=(i,s)=>{i.forEach(function(a){a.getAttribute("href")===s?a.classList.add("active"):a.classList.remove("active")}),(s===""||s==="#contact")&&i[0].classList.add("active")},r=({text:i,href:s,variant:a,className:n,target:e})=>`
+        <a class="custom-btn ${n} ${a}" href="${s}" target="${e||"_self"}">${i}</a>
     `,g=()=>`
 <section class="mind-me case-study xl">
   <img src="assets/mind-me.svg" alt="" class="mind-me__img"/>
@@ -44,7 +44,7 @@
       issues effectively.
     </p>
     <p class="mind-me__tags">UX Research | UI Design | Testing</p>
-    ${o({text:"View",href:"#mind-me",variant:"secondary"})}
+    ${r({text:"View",href:"#mind-me",variant:"secondary"})}
   </div>
 </section>
 `,m=()=>`
@@ -60,7 +60,7 @@
         <p class="beanifesto__tags">
             UX Research | UI Design
         </p>
-        ${o({text:"View",href:"/#beanifesto",variant:"secondary"})}
+        ${r({text:"View",href:"/#beanifesto",variant:"secondary"})}
     </div>
     <img class="beanifesto__img" src="assets/beanifesto.svg" alt="">
 </section>`,u=()=>`
@@ -75,24 +75,22 @@
         making it enjoyable and efficient.
     </p>
     <p class="i-travel__tags">UX Research | UI Design</p>
-    ${o({text:"View",href:"#itravel",variant:"secondary"})}
+    ${r({text:"View",href:"#itravel",variant:"secondary"})}
   </div>
 </section>
 `,f=()=>`
-<div class="contact-form" id="contact">
-  <h1>Let's get in touch!</h1>
-  <form  method="post">
-    <div class="input-group">
-        <input type="text" id="name" name="name" placeholder="Name" required />
-        <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required />
-    </div>
-    
-    <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-    
-    <input class="contact-form__button" type="submit" value="Send">
-  </form>
-</div>
-`,v=()=>`
+  <div class="contact-form" id="contact">
+    <h1>Let's get in touch!</h1>
+    <form id="contact-form">
+      <div class="input-group">
+          <input type="text" id="name" name="name" placeholder="Name" required />
+          <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required />
+      </div>
+      <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+      <input class="contact-form__button" type="submit" value="Send">
+    </form>
+  </div>
+  `,_=()=>`
 <section class="landing-page">
     <h3>
       I am <span class="landing-page__strong">Berlin-based UX/UI designer</span>,
@@ -112,7 +110,7 @@
   ${m()}
   ${u()}
   ${f()}
- `,_=()=>`
+ `,v=()=>`
 <div>
   <div class="container">
     <div class="image-container">
@@ -159,7 +157,7 @@
         health support for individuals and help them navigate and overcome 
         different mental health issues effectively
         </p>
-        ${o({text:"Prototype",href:"/",variant:"case1-green",className:"mind-me-case__btn"})}
+        ${r({text:"Prototype",href:"/",variant:"case1-green",className:"mind-me-case__btn"})}
     </div>
 </section>
 
@@ -294,7 +292,7 @@
 <img class="beanifesto-case-name__img" src="assets/beanifesto-name.svg" alt="App Name">
   <h1 class="title__description"> an Engaging and Sustainable Coffee Product App</h1>
   <img class="beanifesto-case__mockups" src="assets/beanifesto-mockups.svg" alt="Screen Mockups">
-  ${o({text:"Prototype",href:"https://www.figma.com/proto/gHkpWdf7CzUWwPEWoPEsHQ/Project3_Anastasiia?page-id=4%3A10&type=design&node-id=812-994&viewport=408%2C295%2C0.13&t=eK0ShY4qwXAjKbRZ-1&scaling=scale-down&starting-point-node-id=812%3A994&mode=design",variant:"cases__btn",className:"beanifesto-case__btn",target:"_blank"})}
+  ${r({text:"Prototype",href:"https://www.figma.com/proto/gHkpWdf7CzUWwPEWoPEsHQ/Project3_Anastasiia?page-id=4%3A10&type=design&node-id=812-994&viewport=408%2C295%2C0.13&t=eK0ShY4qwXAjKbRZ-1&scaling=scale-down&starting-point-node-id=812%3A994&mode=design",variant:"cases__btn",className:"beanifesto-case__btn",target:"_blank"})}
 </section>
 
 <section class="cases__sections xl">
@@ -525,4 +523,4 @@
   </div>
 </section>
 
-`,d={"/":{template:v(),title:"NK - Home",description:"This is the home page"},about:{template:_(),title:"NK - About",description:"This is the about page"},resume:{template:y(),title:"NK - Resume",description:"This is the resume page"},"mind-me":{template:w(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:b(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:I(),title:"NK - iTravel",description:"This is the iTravel page"}},h=async()=>{var i=window.location.hash.replace("#","");i.length==0&&(i="/",window.history.replaceState({},document.title,"."));const t=d[i]||d["/"],a=t.template,n=document.getElementById("content");n.classList.add("fade"),await new Promise(s=>setTimeout(s,200));const e=document.getElementById("footer");n.innerHTML="",e.innerHTML="",await new Promise(s=>setTimeout(s,100)),n.innerHTML=a,e.innerHTML=c(),n.classList.add("show"),await new Promise(s=>setTimeout(s,200)),n.classList.remove("fade","show"),document.title=t.title};window.addEventListener("hashchange",h);h();
+`,d={"/":{template:_(),title:"NK - Home",description:"This is the home page"},about:{template:v(),title:"NK - About",description:"This is the about page"},resume:{template:y(),title:"NK - Resume",description:"This is the resume page"},"mind-me":{template:w(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:b(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:I(),title:"NK - iTravel",description:"This is the iTravel page"}},h=async()=>{var i=window.location.hash.replace("#","");i.length==0&&(i="/",window.history.replaceState({},document.title,"."));const s=d[i]||d["/"],a=s.template,n=document.getElementById("content");n.classList.add("fade"),await new Promise(t=>setTimeout(t,200));const e=document.getElementById("footer");n.innerHTML="",e.innerHTML="",await new Promise(t=>setTimeout(t,100)),n.innerHTML=a,e.innerHTML=c(),n.classList.add("show"),await new Promise(t=>setTimeout(t,200)),n.classList.remove("fade","show"),document.title=s.title};window.addEventListener("hashchange",h);h();window.onload=async function(){const i=s=>{s.preventDefault();const a=s.target,n=new FormData(a),{name:e,email:t,message:o}=Object.fromEntries(n.entries());emailjs.send("service_zd2m69w","template_0g5u8p4",{from_name:e,to_name:"Anastasiia",from_email:t,message:o}),a.reset()};await new Promise(s=>setTimeout(s,300)),document.getElementById("contact-form").addEventListener("submit",i)};
