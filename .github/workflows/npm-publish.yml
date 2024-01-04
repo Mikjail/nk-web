@@ -9,8 +9,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - "docs/**" # Ignore changes in the docs directory
 
 jobs:
   nk-ci-cd:
@@ -30,5 +28,9 @@ jobs:
           git config --global user.name 'MikjailS'
           git config --global user.email 'mikjailsalazar@gmail.com'
           git add -A
-          git commit -m "feat: Deploy new changes into docs"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "feat: Deploy new changes into docs"
+            git push
+          fi
