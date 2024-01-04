@@ -1,6 +1,6 @@
-const EMAILJS_TEMPLATE_ID = "template_0g5u8p4";
-const EMAILJS_SERVICE_ID = "service_zd2m69w";
-const EMAILJS_PUBLIC_KEY = "qQIdKbKNoyaz0Z5rb";
+const EMAILJS_TEMPLATE_ID = "template_1td30hg";
+const EMAILJS_SERVICE_ID = "service_01wo9w7";
+const EMAILJS_PUBLIC_KEY = "TzZMlShXkbi54loJf";
 window.onload = async function () {
   const onSubmit = (e) => {
     e.preventDefault();
