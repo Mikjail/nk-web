@@ -1,4 +1,4 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();const p=()=>`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();const h=()=>`
     <div class="navbar">
     <div class="logo">
       <a href="/#">
@@ -13,7 +13,7 @@
     <div class="right">
       <a class="primary-btn nav-link" href="#contact">Contact</a>
     </div>
-  </div>`;document.getElementById("nav").innerHTML=p();const c=()=>`
+  </div>`;document.getElementById("nav").innerHTML=h();const c=()=>`
   <div class="footer-content">
     <p class="footer-text">
       Get in touch with me at <strong>anastasiiakiias@gmail.com</strong>
@@ -30,9 +30,9 @@
   </a>
 </div>
   </div>
-`;document.getElementById("footer").innerHTML=c();document.getElementById("nav").innerHTML=p();document.getElementById("footer").innerHTML=c();window.onload=function(){const i=document.querySelectorAll(".nav-link"),s=window.location.hash;l(i,s),window.addEventListener("hashchange",function(){const a=window.location.hash;l(i,a)})};const l=(i,s)=>{i.forEach(function(a){a.getAttribute("href")===s?a.classList.add("active"):a.classList.remove("active")}),(s===""||s==="#contact")&&i[0].classList.add("active")},r=({text:i,href:s,variant:a,className:n,target:e})=>`
+`;document.getElementById("footer").innerHTML=c();document.getElementById("nav").innerHTML=h();document.getElementById("footer").innerHTML=c();window.onload=function(){const i=document.querySelectorAll(".nav-link"),s=window.location.hash;l(i,s),window.addEventListener("hashchange",function(){const a=window.location.hash;l(i,a)})};const l=(i,s)=>{i.forEach(function(a){a.getAttribute("href")===s?a.classList.add("active"):a.classList.remove("active")}),(s===""||s==="#contact")&&i[0].classList.add("active")},r=({text:i,href:s,variant:a,className:n,target:e})=>`
         <a class="custom-btn ${n} ${a}" href="${s}" target="${e||"_self"}">${i}</a>
-    `,g=()=>`
+    `,m=()=>`
 <section class="mind-me case-study xl">
   <img src="assets/mind-me.svg" alt="" class="mind-me__img"/>
   <div class="mind-me__right">
@@ -47,7 +47,7 @@
     ${r({text:"View",href:"#mind-me",variant:"secondary"})}
   </div>
 </section>
-`,m=()=>`
+`,u=()=>`
 <section class="beanifesto case-study xl">
     <div class="beanifesto__left">
         <h1 class="beanifesto__title main-title">Beanifesto</h1>
@@ -63,7 +63,7 @@
         ${r({text:"View",href:"/#beanifesto",variant:"secondary"})}
     </div>
     <img class="beanifesto__img" src="assets/beanifesto.svg" alt="">
-</section>`,u=()=>`
+</section>`,f=()=>`
 <section class="i-travel case-study xl">
   <img src="assets/i-travel.svg" alt="" class="i-travel__img"/>
   <div class="i-travel__right">
@@ -78,7 +78,7 @@
     ${r({text:"View",href:"#itravel",variant:"secondary"})}
   </div>
 </section>
-`,f=()=>`
+`,_=()=>`
   <div class="contact-form" id="contact">
     <h1>Let's get in touch!</h1>
     <form id="contact-form">
@@ -90,7 +90,7 @@
       <input class="contact-form__button" type="submit" value="Send">
     </form>
   </div>
-  `,_=()=>`
+  `,v=()=>`
 <section class="landing-page">
     <h3>
       I am <span class="landing-page__strong">Berlin-based UX/UI designer</span>,
@@ -106,11 +106,11 @@
       />
   </div>
   </section>
-  ${g()}
   ${m()}
   ${u()}
   ${f()}
- `,v=()=>`
+  ${_()}
+ `,y=()=>`
 <div>
   <div class="container">
     <div class="image-container">
@@ -143,11 +143,11 @@
     </div>
   </div>
 </div>
-`,y=()=>`
+`,w=()=>`
 <div class="resume">
    <h1>Page in construction 🛠️</h1>
 </div>
-`,w=()=>`
+`,b=()=>`
 <section class="mind-me-case xl">
     <img class="mind-me-case__img" src="assets/mindMeCase.svg" alt="">
     <div class="mind-me-case__right">
@@ -286,7 +286,7 @@
       
   </div>
 </section>
-`,b=()=>`
+`,I=()=>`
 
 <section class="beanifesto-case__main xl">
 <img class="beanifesto-case-name__img" src="assets/beanifesto-name.svg" alt="App Name">
@@ -410,7 +410,7 @@
       
   </div>
 </section>
-`,I=()=>`
+`,T=()=>`
 <section class="itravel__case xl">
     <h1 class="itravel__name">ITravel</h1>
     <h1 class="title__description title__description--itravel">A mobile app that helps users plan their trips and activities</h1>
@@ -523,4 +523,4 @@
   </div>
 </section>
 
-`,d={"/":{template:_(),title:"NK - Home",description:"This is the home page"},about:{template:v(),title:"NK - About",description:"This is the about page"},resume:{template:y(),title:"NK - Resume",description:"This is the resume page"},"mind-me":{template:w(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:b(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:I(),title:"NK - iTravel",description:"This is the iTravel page"}},h=async()=>{var i=window.location.hash.replace("#","");i.length==0&&(i="/",window.history.replaceState({},document.title,"."));const s=d[i]||d["/"],a=s.template,n=document.getElementById("content");n.classList.add("fade"),await new Promise(t=>setTimeout(t,200));const e=document.getElementById("footer");n.innerHTML="",e.innerHTML="",await new Promise(t=>setTimeout(t,100)),n.innerHTML=a,e.innerHTML=c(),n.classList.add("show"),await new Promise(t=>setTimeout(t,200)),n.classList.remove("fade","show"),document.title=s.title};window.addEventListener("hashchange",h);h();window.onload=async function(){const i=s=>{s.preventDefault();const a=s.target,n=new FormData(a),{name:e,email:t,message:o}=Object.fromEntries(n.entries());emailjs.send("service_zd2m69w","template_0g5u8p4",{from_name:e,to_name:"Anastasiia",from_email:t,message:o}),a.reset()};await new Promise(s=>setTimeout(s,300)),document.getElementById("contact-form").addEventListener("submit",i)};
+`,d={"/":{template:v(),title:"NK - Home",description:"This is the home page"},about:{template:y(),title:"NK - About",description:"This is the about page"},resume:{template:w(),title:"NK - Resume",description:"This is the resume page"},"mind-me":{template:b(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:I(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:T(),title:"NK - iTravel",description:"This is the iTravel page"}},g=async()=>{var i=window.location.hash.replace("#","");i.length==0&&(i="/",window.history.replaceState({},document.title,"."));const s=d[i]||d["/"],a=s.template,n=document.getElementById("content");n.classList.add("fade"),await new Promise(t=>setTimeout(t,200));const e=document.getElementById("footer");n.innerHTML="",e.innerHTML="",await new Promise(t=>setTimeout(t,100)),n.innerHTML=a,e.innerHTML=c(),n.classList.add("show"),await new Promise(t=>setTimeout(t,200)),n.classList.remove("fade","show"),document.title=s.title};window.addEventListener("hashchange",g);g();var p={BASE_URL:"./",MODE:"production",DEV:!1,PROD:!0,SSR:!1};window.onload=async function(){const i=s=>{s.preventDefault();const a=s.target,n=new FormData(a),{name:e,email:t,message:o}=Object.fromEntries(n.entries());emailjs.send(p.EMAILJS_SERVICE_ID,p.EMAILJS_TEMPLATE_ID,{from_name:e,to_name:"Anastasiia",from_email:t,message:o}),a.reset()};await new Promise(s=>setTimeout(s,300)),document.getElementById("contact-form").addEventListener("submit",i)};
