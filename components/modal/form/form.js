@@ -8,7 +8,7 @@ export const Form = () => {
           <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
       </div>
       <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-      <input class="contact-form__button" type="submit" value="Send">
+      <input class="contact-form__button custom-btn secondary" type="submit" value="Send">
     </form>
   </div>
   `;

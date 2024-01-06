@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
 }
+
 .contact-form h1 {
   font-weight: var(--black);
   margin-bottom: 2.5rem;
@@ -13,6 +13,7 @@
   display: flex;
   gap: 1.5rem;
   color: var(--main-dark);
+  height: 3.4375rem;
 }
 
 textarea,
@@ -42,21 +43,11 @@ textarea {
 }
 
 .contact-form__button {
-  background-color: var(--main-dark);
-  color: var(--main-light);
-  font-weight: var(--black);
-  font-size: var(--regular);
-  display: flex;
-  width: 40rem;
-  padding: 1.5rem 1.25rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
   border-radius: 0.9375rem;
   box-shadow: var(--cta-shadow);
-  border: none;
   margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 textarea::placeholder,

@@ -1,13 +1,17 @@
+import { MsgSent } from "../components/modal/msg-sent/msgSent";
+import { dialog } from "./dialog";
+
 const EMAILJS_TEMPLATE_ID = "template_1td30hg";
 const EMAILJS_SERVICE_ID = "service_01wo9w7";
 const EMAILJS_PUBLIC_KEY = "TzZMlShXkbi54loJf";
-window.onload = async function () {
-  const onSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-    const { name, email, message } = Object.fromEntries(formData.entries());
-    emailjs.send(
+
+export const onSubmitEmail = (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
+  const { name, email, message } = Object.fromEntries(formData.entries());
+  emailjs
+    .send(
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
       {
@@ -17,12 +21,26 @@ window.onload = async function () {
         message: message,
       },
       EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
     );
 
-    form.reset();
-  };
+  form.reset();
+  document.getElementById("modal-content").innerHTML = MsgSent();
 
-  await new Promise((r) => setTimeout(r, 300));
-
-  document.getElementById("contact-form").addEventListener("submit", onSubmit);
+  document
+    .querySelector(".msge-sent__btn")
+    .addEventListener("click", function () {
+      dialog.close();
+    });
 };
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", onSubmitEmail);

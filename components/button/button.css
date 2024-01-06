@@ -10,6 +10,8 @@
   text-decoration: none;
   box-shadow: var(--cta-shadow);
   width: 12.8125rem;
+  height: 3.4375rem;
+  border: 0;
 }
 
 .custom-btn.primary {

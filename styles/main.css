@@ -3,6 +3,8 @@
 @import url("variables.css");
 @import url("layout.css");
 @import url("shared.css");
+@import url("../components/modal/msg-sent/msgSent.css");
+@import url("../components/modal/modal.css");
 @import url("../components/button/button.css");
 @import url("../components/topBar/nav.css");
 @import url("../components/pages/about/about.css");
@@ -12,7 +14,8 @@
 @import url("../components/pages/home/beanifesto/beanifesto.css");
 @import url("../components/pages/home/iTravel/iTravel.css");
 @import url("../components/pages/resume/resume.css");
-@import url("../components/pages/home/form/form.css");
+@import url("../components/modal/form/form.css");
 @import url("../components/pages/mindMeCase/mindMeCase.css");
 @import url("../components/pages/beanifestoCase/beanifesto.css");
 @import url("../components/pages/iTravelCase/itravelcase.css");
+

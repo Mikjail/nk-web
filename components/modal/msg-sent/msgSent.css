@@ -1,0 +1,31 @@
+.msge-sent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.msge-sent__great,
+.msge-sent__btn {
+    margin-top: 3.5rem;
+}
+
+.msge-sent img {
+    width: 7.5rem;   
+}
+
+.msge-sent__great {
+    font-size: var(--heading1);
+    font-weight: var(--black);
+}
+
+.msge-sent__msge {
+    font-size: var( --heading3);
+    margin-top: 1.75rem;
+}
+
+.msge-sent__btn {
+    border: none;
+}
+
+

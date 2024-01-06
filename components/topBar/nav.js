@@ -12,9 +12,7 @@ export const Nav = () => {
       <a class="nav-link" href="/assets/anastasiia-kiias-cv.pdf" target="_blank">Resume</a>
     </div>
     <div class="right">
-      <a class="primary-btn nav-link" href="#contact">Contact</a>
+      <button class="custom-btn primary-btn nav-link" id="contact-btn">Contact</button>
     </div>
   </div>`;
 };
-
-document.getElementById("nav").innerHTML = Nav();
