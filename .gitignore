@@ -7,7 +7,6 @@
 /bin/
 /build/
 /dist/
-docs/*
 
 # Ignore package manager directories
 /node_modules/
