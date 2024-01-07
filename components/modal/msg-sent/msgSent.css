@@ -11,16 +11,15 @@
 }
 
 .msge-sent img {
-    width: 7.5rem;   
+    width: 5rem;   
 }
 
 .msge-sent__great {
-    font-size: var(--heading1);
-    font-weight: var(--black);
+    font-size: var(--heading2);
 }
 
 .msge-sent__msge {
-    font-size: var( --heading3);
+    font-size: var( --heading4);
     margin-top: 1.75rem;
 }
 
