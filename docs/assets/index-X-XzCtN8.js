@@ -32,7 +32,7 @@
   </div>
 `;document.getElementById("footer").innerHTML=l();const g=()=>`
   <div class="contact-form" id="contact">
-    <h1>Let's get in touch!</h1>
+    <h2>Let's get in touch!</h2>
     <form id="contact-form">
       <div class="input-group">
           <input type="text" id="name" name="name" placeholder="Name" required />
