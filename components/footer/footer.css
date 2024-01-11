@@ -1,6 +1,7 @@
 .footer-content {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   margin: 0 3.4375rem;
   padding: 0;
@@ -22,4 +23,28 @@
 .footer-icons img {
   width: 1.875rem;
   height: 1.875rem;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 430px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+
+  .footer-text {
+    font-size: 0.8125rem;
+  }
+
+  .footer-icons {
+    justify-content: flex-end;
+    margin: 1rem auto 1rem auto;
+    align-items: center;
+  }
+
+  .footer-icons img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }

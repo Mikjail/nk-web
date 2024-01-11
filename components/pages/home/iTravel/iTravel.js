@@ -2,7 +2,7 @@ import { Button } from "../../../button/button.js";
 
 export const ITravel = () => /*html*/ `
 <section class="i-travel case-study xl">
-  <img src="assets/i-travel.svg" alt="" class="i-travel__img"/>
+  <img class="image-cases" src="assets/i-travel.svg" alt="" class="i-travel__img"/>
   <div class="i-travel__right">
     <h1 class="i-travel__title main-title">ITravel</h1>
     <h2 class="i-travel__subtitle subtitle">Travel Planner App</h2>

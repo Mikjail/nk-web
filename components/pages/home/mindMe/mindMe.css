@@ -13,3 +13,32 @@
 .mind-me__description {
   margin-bottom: 15px;
 }
+
+/* Styles for mobile devices */
+@media (max-width: 430px) {
+  .mind-me__left {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .mind-me__title {
+    font-size: 1.5rem;
+  }
+
+  .mind-me__subtitle {
+    font-size: 1.125rem;
+    color: #707070;
+  }
+
+  .mind-me__tags {
+    font-size: 0.875rem;
+  }
+
+  .mind-me__description {
+    font-size: 0.875rem;
+  }
+
+  .custom-btn.secondary {
+    display: none;
+  }
+}

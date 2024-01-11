@@ -17,3 +17,36 @@
 .i-travel {
   height: 70vh;
 }
+
+/* Styles for mobile devices */
+@media (max-width: 430px) {
+  .i-travel__left {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .i-travel__title {
+    font-size: 1.5rem;
+  }
+
+  .i-travel__subtitle {
+    font-size: 1.125rem;
+    color: #707070;
+  }
+
+  .i-travel__tags {
+    font-size: 0.875rem;
+  }
+
+  .i-travel__description {
+    font-size: 0.875rem;
+  }
+
+  .i-travel {
+    height: auto;
+  }
+
+  .custom-btn.secondary {
+    display: none;
+  }
+}
