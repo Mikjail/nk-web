@@ -37,6 +37,7 @@
     height: auto;
     flex-direction: column;
     padding-top: 25%;
+    margin: 0 1rem;
   }
 
   .image-container img {
@@ -44,10 +45,10 @@
   }
 
   .text-container h3 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
   .regular-text {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
