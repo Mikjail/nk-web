@@ -32,3 +32,32 @@
   height: 1.5rem;
   object-fit: fill;
 }
+
+.mobile-icon {
+  display: none;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 430px) {
+  .navbar {
+    padding: 2rem 3rem;
+  }
+
+  .navbar .middle a {
+    display: none;
+  }
+
+  .navbar .logo a img {
+    width: 3rem;
+    height: 1.125rem;
+  }
+
+  .primary-btn {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: block;
+    width: 2rem;
+  }
+}

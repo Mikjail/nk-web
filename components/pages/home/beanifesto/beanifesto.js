@@ -1,7 +1,7 @@
 import { Button } from "../../../button/button.js";
 
 export const Beanifesto = () => /*html*/ `
-<section class="beanifesto case-study xl">
+<section class="beanifesto case-study b-image-cases xl">
     <div class="beanifesto__left">
         <h1 class="beanifesto__title main-title">Beanifesto</h1>
         <h2 class="beanifesto__subtitle subtitle">E - Commerce App</h2>
@@ -19,5 +19,5 @@ export const Beanifesto = () => /*html*/ `
           variant: "secondary",
         })}
     </div>
-    <img class="beanifesto__img" src="assets/beanifesto.svg" alt="">
+    <img class="image-cases beanifesto__img" src="assets/beanifesto.svg" alt="">
 </section>`;

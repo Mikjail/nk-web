@@ -1,6 +1,7 @@
 .container {
   padding-top: 10%;
   display: flex;
+  flex-direction: row;
   height: 90vh;
   justify-content: flex-start;
   align-items: center;
@@ -28,4 +29,25 @@
   font-weight: var(--bold);
   color: var(--main-dark);
   margin-bottom: 1.5rem;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 430px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+    padding-top: 25%;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .text-container h3 {
+    font-size: 1.125rem;
+  }
+
+  .regular-text {
+    font-size: 0.875rem;
+  }
 }

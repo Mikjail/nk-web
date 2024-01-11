@@ -13,6 +13,7 @@ export const Nav = () => {
     </div>
     <div class="right">
       <button class="custom-btn primary-btn nav-link" id="contact-btn">Contact</button>
+      <img class="mobile-icon" src="/assets/mobile-icon.svg" alt="Menu Icon">
     </div>
   </div>`;
 };
