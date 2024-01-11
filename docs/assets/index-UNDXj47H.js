@@ -12,6 +12,7 @@
     </div>
     <div class="right">
       <button class="custom-btn primary-btn nav-link" id="contact-btn">Contact</button>
+      <img class="mobile-icon" src="/assets/mobile-icon.svg" alt="Menu Icon">
     </div>
   </div>`,l=()=>`
   <div class="footer-content">
@@ -60,7 +61,7 @@
         <a class="custom-btn ${n} ${a}" href="${i}" target="${e||"_self"}">${s}</a>
     `,y=()=>`
 <section class="mind-me case-study xl">
-  <img src="assets/mind-me.svg" alt="" class="mind-me__img"/>
+  <img class="image-cases" src="assets/mind-me.svg" alt="" class="mind-me__img"/>
   <div class="mind-me__right">
     <h1 class="mind-me__title main-title">MindMe</h1>
     <h2 class="mind-me__subtitle subtitle">Mental Health Support App</h2>
@@ -74,7 +75,7 @@
   </div>
 </section>
 `,b=()=>`
-<section class="beanifesto case-study xl">
+<section class="beanifesto case-study b-image-cases xl">
     <div class="beanifesto__left">
         <h1 class="beanifesto__title main-title">Beanifesto</h1>
         <h2 class="beanifesto__subtitle subtitle">E - Commerce App</h2>
@@ -88,10 +89,10 @@
         </p>
         ${c({text:"View",href:"/#beanifesto",variant:"secondary"})}
     </div>
-    <img class="beanifesto__img" src="assets/beanifesto.svg" alt="">
+    <img class="image-cases beanifesto__img" src="assets/beanifesto.svg" alt="">
 </section>`,w=()=>`
 <section class="i-travel case-study xl">
-  <img src="assets/i-travel.svg" alt="" class="i-travel__img"/>
+  <img class="image-cases" src="assets/i-travel.svg" alt="" class="i-travel__img"/>
   <div class="i-travel__right">
     <h1 class="i-travel__title main-title">ITravel</h1>
     <h2 class="i-travel__subtitle subtitle">Travel Planner App</h2>
