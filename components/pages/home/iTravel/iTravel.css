@@ -26,20 +26,20 @@
   }
 
   .i-travel__title {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
   }
 
   .i-travel__subtitle {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: #707070;
   }
 
   .i-travel__tags {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .i-travel__description {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .i-travel {

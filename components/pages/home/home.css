@@ -59,7 +59,7 @@
     height: auto;
     margin-top: 2.5rem;
     gap: 1rem;
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
   .landing-page {
     padding-top: 10%;
@@ -68,7 +68,7 @@
   .landing-page h3 {
     width: 100%;
     font-size: 1.125rem;
-    padding: 3rem;
+    padding: 1rem;
   }
 
   .main-text {

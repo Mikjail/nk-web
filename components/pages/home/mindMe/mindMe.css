@@ -22,20 +22,20 @@
   }
 
   .mind-me__title {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
   }
 
   .mind-me__subtitle {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: #707070;
   }
 
   .mind-me__tags {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .mind-me__description {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .custom-btn.secondary {
