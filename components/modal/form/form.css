@@ -57,27 +57,37 @@ input[type="email"]::placeholder {
 
 /* Styles for mobile devices */
 @media (max-width: 430px) {
+  #contact-form {
+    display: block;
+    height: 21rem;
+  }
+
   .contact-form h1 {
     font-size: 1.5rem;
     font-weight: var(--bold);
   }
 
   .input-group {
+    display: block;
     width: 20rem;
-    gap: 0.5rem;
+    height: auto;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 3rem;
   }
 
   textarea,
   input[type="text"],
   input[type="email"] {
     width: 100%;
-    height: 2.5rem;
     font-size: 0.875rem;
+    margin-top: 0.5rem;
   }
 
   textarea {
     height: 8.75rem;
-    margin-top: 0;
   }
 
   .custom-btn.secondary.form {
@@ -87,7 +97,7 @@ input[type="email"]::placeholder {
   }
 
   .contact-form__button {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   .contact-form h2 {
