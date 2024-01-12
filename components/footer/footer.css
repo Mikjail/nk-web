@@ -31,11 +31,13 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 1.5rem;
+    height: 75vh;
   }
 
   .footer-text {
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: center;
+    margin-top: auto;
   }
 
   .footer-icons {
