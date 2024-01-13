@@ -23,3 +23,16 @@ const activeRoute = (navLinks, route) => {
     navLinks[0].classList.add("active");
   }
 };
+
+window.onload = function () {
+  if (window.matchMedia("(max-width: 430px)")) {
+    const menuToggleInput = document.querySelector(".menuToggle input");
+    const menuToggleLinks = document.querySelectorAll(".menuToggle a");
+
+    menuToggleLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        menuToggleInput.click();
+      });
+    });
+  }
+};
