@@ -1,20 +1,70 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();const f=()=>`
-    <div class="navbar">
-    <div class="logo">
-      <a href="/#">
-        <img src="assets/logo.png" alt="Your Logo" />
-      </a>
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();const f=()=>`
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/#">
+          <img src="assets/logo.png" alt="Your Logo" />
+        </a>
+      </div>
+      <ul class="middle" id="menu">
+        <li>
+          <a class="nav-link" href="#">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#about">
+            About
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="/assets/anastasiia-kiias-cv.pdf" target="_blank">
+            Resume
+          </a>
+        </li>
+      </ul>
+      <div class="right">
+        <button class="custom-btn primary-btn nav-link" id="contact-btn">Contact</button>
+      </div>
+    </nav>
+    <!-- Mobile -->
+    <nav class="navbar-xs">
+      <div class="logo">
+        <a href="/#">
+          <img src="assets/logo.png" alt="Your Logo" />
+        </a>
+      </div>
+      <div class="menuToggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menuItem" id="menu">
+          <li>
+            <a class="nav-link" href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="/assets/anastasiia-kiias-cv.pdf" target="_blank">
+              Resume
+            </a>
+          </li>
+      </ul>
     </div>
-    <div class="middle">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="/assets/anastasiia-kiias-cv.pdf" target="_blank">Resume</a>
-    </div>
-    <div class="right">
-      <button class="custom-btn primary-btn nav-link" id="contact-btn">Contact</button>
-      <img class="mobile-icon" src="/assets/mobile-icon.svg" alt="Menu Icon">
-    </div>
-  </div>`,l=()=>`
+
+    </nav>
+    
+    `,l=()=>`
   <div class="footer-content">
     <p class="footer-text">
       Get in touch with me at <strong>anastasiiakiias@gmail.com</strong>
@@ -43,22 +93,22 @@
       <input class="contact-form__button custom-btn secondary" type="submit" value="Send">
     </form>
   </div>
-  `,_=()=>`
+  `,v=()=>`
     <div class="msge-sent">
         <img src="/assets/okey.svg" alt="">
         <h2 class="msge-sent__great">Great!</h2>
         <p class="msge-sent__msge">Your message was successfully sent.</p>
         <button class="custom-btn secondary msge-sent__btn" id="ok-btn">Ok</button>
     </div>
-    `,v=()=>`
+    `,_=()=>`
         <div class="modal-header">
             <span class="modal-header__close" id="close-btn">&times;</span>
         </div>
         <div class="modal-body" id="modal-content">
             ${g()}
         </div>
-    `;document.getElementById("nav").innerHTML=f();document.getElementById("footer").innerHTML=l();document.getElementById("dialog-form").innerHTML=v();window.onload=function(){const s=document.querySelectorAll(".nav-link"),i=window.location.hash;d(s,i),window.addEventListener("hashchange",function(){const a=window.location.hash;d(s,a)})};const d=(s,i)=>{s.forEach(function(a){a.getAttribute("href")===i?a.classList.add("active"):a.classList.remove("active")}),(i===""||i==="#contact")&&s[0].classList.add("active")},c=({text:s,href:i,variant:a,className:n,target:e})=>`
-        <a class="custom-btn ${n} ${a}" href="${i}" target="${e||"_self"}">${s}</a>
+    `;document.getElementById("nav").innerHTML=f();document.getElementById("footer").innerHTML=l();document.getElementById("dialog-form").innerHTML=_();window.onload=function(){const s=document.querySelectorAll(".nav-link"),a=window.location.hash;d(s,a),window.addEventListener("hashchange",function(){const i=window.location.hash;d(s,i)})};const d=(s,a)=>{s.forEach(function(i){i.getAttribute("href")===a?i.classList.add("active"):i.classList.remove("active")}),(a===""||a==="#contact")&&s[0].classList.add("active")};window.onload=function(){if(window.matchMedia("(max-width: 430px)")){const s=document.querySelector(".menuToggle input");document.querySelectorAll(".menuToggle a").forEach(i=>{i.addEventListener("click",()=>{s.click()})})}};const c=({text:s,href:a,variant:i,className:n,target:e})=>`
+        <a class="custom-btn ${n} ${i}" href="${a}" target="${e||"_self"}">${s}</a>
     `,y=()=>`
 <section class="mind-me case-study xl">
   <img class="image-cases" src="assets/mind-me.svg" alt="" class="mind-me__img"/>
@@ -124,7 +174,7 @@
   ${y()}
   ${b()}
   ${w()}
- `,T=()=>`
+ `,k=()=>`
 <div>
   <div class="container">
     <div class="image-container">
@@ -157,7 +207,7 @@
     </div>
   </div>
 </div>
-`,k=()=>`
+`,T=()=>`
 <div class="resume">
    <h1>Page in construction 🛠️</h1>
 </div>
@@ -537,4 +587,4 @@
   </div>
 </section>
 
-`,p={"/":{template:I(),title:"NK - Home",description:"This is the home page"},about:{template:T(),title:"NK - About",description:"This is the about page"},resume:{template:k(),title:"NK - Resume",description:"This is the resume page"},"mind-me":{template:E(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:x(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:A(),title:"NK - iTravel",description:"This is the iTravel page"}},h=async()=>{var s=window.location.hash.replace("#","");s.length==0&&(s="/",window.history.replaceState({},document.title,"."));const i=p[s]||p["/"],a=i.template,n=document.getElementById("content");n.classList.add("fade"),await new Promise(t=>setTimeout(t,200));const e=document.getElementById("footer");n.innerHTML="",e.innerHTML="",await new Promise(t=>setTimeout(t,100)),n.innerHTML=a,e.innerHTML=l(),n.classList.add("show"),await new Promise(t=>setTimeout(t,200)),n.classList.remove("fade","show"),document.title=i.title};window.addEventListener("hashchange",h);h();const M=document.getElementById("contact-btn"),r=document.getElementById("dialog-form"),m=document.getElementById("close-btn");M.addEventListener("click",async()=>{r.showModal(),document.getElementById("modal-content").innerHTML=g(),document.getElementById("contact-form").addEventListener("submit",u),m.addEventListener("click",()=>{r.close()})});document.addEventListener("click",s=>{s.target===r&&r.close()});document.addEventListener("click",s=>{s.target===m&&r.close()});const S="template_1td30hg",R="service_01wo9w7",L="TzZMlShXkbi54loJf",u=s=>{s.preventDefault();const i=s.target,a=new FormData(i),{name:n,email:e,message:t}=Object.fromEntries(a.entries());emailjs.send(R,S,{from_name:n,to_name:"Anastasiia",from_email:e,message:t},L).then(function(o){console.log("SUCCESS!",o.status,o.text)},function(o){console.log("FAILED...",o)}),i.reset(),document.getElementById("modal-content").innerHTML=_(),document.querySelector(".msge-sent__btn").addEventListener("click",function(){r.close()})};document.getElementById("contact-form").addEventListener("submit",u);
+`,p={"/":{template:I(),title:"NK - Home",description:"This is the home page"},about:{template:k(),title:"NK - About",description:"This is the about page"},resume:{template:T(),title:"NK - Resume",description:"This is the resume page"},"mind-me":{template:E(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:x(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:A(),title:"NK - iTravel",description:"This is the iTravel page"}},h=async()=>{var s=window.location.hash.replace("#","");s.length==0&&(s="/",window.history.replaceState({},document.title,"."));const a=p[s]||p["/"],i=a.template,n=document.getElementById("content");n.classList.add("fade"),await new Promise(t=>setTimeout(t,200));const e=document.getElementById("footer");n.innerHTML="",e.innerHTML="",await new Promise(t=>setTimeout(t,100)),n.innerHTML=i,e.innerHTML=l(),n.classList.add("show"),await new Promise(t=>setTimeout(t,200)),n.classList.remove("fade","show"),document.title=a.title};window.addEventListener("hashchange",h);h();const M=document.getElementById("contact-btn"),r=document.getElementById("dialog-form"),m=document.getElementById("close-btn");M.addEventListener("click",async()=>{r.showModal(),document.getElementById("modal-content").innerHTML=g(),document.getElementById("contact-form").addEventListener("submit",u),m.addEventListener("click",()=>{r.close()})});document.addEventListener("click",s=>{s.target===r&&r.close()});document.addEventListener("click",s=>{s.target===m&&r.close()});const S="template_1td30hg",L="service_01wo9w7",R="TzZMlShXkbi54loJf",u=s=>{s.preventDefault();const a=s.target,i=new FormData(a),{name:n,email:e,message:t}=Object.fromEntries(i.entries());emailjs.send(L,S,{from_name:n,to_name:"Anastasiia",from_email:e,message:t},R).then(function(o){console.log("SUCCESS!",o.status,o.text)},function(o){console.log("FAILED...",o)}),a.reset(),document.getElementById("modal-content").innerHTML=v(),document.querySelector(".msge-sent__btn").addEventListener("click",function(){r.close()})};document.getElementById("contact-form").addEventListener("submit",u);
