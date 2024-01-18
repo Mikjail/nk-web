@@ -9,6 +9,10 @@
   max-width: 62.5rem;
 }
 
+#contact-form-mobile {
+  display: none;
+}
+
 .modal-header__close {
   cursor: pointer;
 }
@@ -29,7 +33,7 @@
 
 /* Styles for mobile devices */
 @media (max-width: 430px) {
-  #dialog-form {
+  #contact-form-mobile {
     display: block;
   }
 
