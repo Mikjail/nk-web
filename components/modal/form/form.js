@@ -2,13 +2,13 @@ export const Form = () => {
   return /*html*/ `
   <div class="contact-form" id="contact">
     <h2>Let's get in touch!</h2>
-    <form id="contact-form">
+    <form id="${window.matchMedia("(max-width: 430px)").matches ? 'contact-form-xs' : 'contact-form' }">
       <div class="input-group">
           <input type="text" id="name" name="name" placeholder="Name" required />
           <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
       </div>
       <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-      <input class="contact-form__button custom-btn secondary" type="submit" value="Send">
+      <input class="contact-form__button custom-btn secondary form" type="submit" value="Send">
     </form>
   </div>
   `;

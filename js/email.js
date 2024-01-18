@@ -30,17 +30,29 @@ export const onSubmitEmail = (e) => {
         console.log("FAILED...", error);
       }
     );
-
-  form.reset();
-  document.getElementById("modal-content").innerHTML = MsgSent();
-
-  document
+  if(window.matchMedia("(max-width: 430px)").matches) {
+    const dialog = document.getElementById("mobile-dialog");
+    dialog.showModal();
+  } else {
+    document.getElementById("modal-content").innerHTML = MsgSent();
+    document
     .querySelector(".msge-sent__btn")
     .addEventListener("click", function () {
       dialog.close();
     });
+  }
+  form.reset();
 };
 
-document
+
+if(window.matchMedia("(max-width: 430px)").matches) {
+  document
+    .getElementById("contact-form-xs")
+    .addEventListener("submit", onSubmitEmail);
+} else {
+  document
   .getElementById("contact-form")
   .addEventListener("submit", onSubmitEmail);
+}
+  
+
