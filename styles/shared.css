@@ -149,3 +149,7 @@ ol {
   margin-top: 1.5rem;
   border-radius: 2rem;
 }
+
+*:focus {
+  outline-color: var(--main-green);
+}
