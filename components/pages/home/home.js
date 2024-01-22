@@ -10,16 +10,19 @@ export const Home = () => /*html*/ `
       focused on creating exclusive user experience through research and a deep
       understanding of user needs
     </h3>
-    <div class="main-text">
+    <a class="main-text" href="#case-studies">
       <h4>My case studies</h4>
       <img
         src="assets/arrow-down-bold.svg"
         alt="Arrow down"
         class="arrow"
       />
+  </a>
   </div>
   </section>
+  <section id="case-studies">
   ${MindMe()}
   ${Beanifesto()}
   ${ITravel()}
+</section>
  `;

@@ -20,6 +20,10 @@
   background-color: var(--case2-green);
 }
 
+.beanifesto-case__btn:hover {
+  background-color: #00574e;
+}
+
 .beanifesto-cases__column li {
   font-weight: var(--regular);
   font-size: var(--body);

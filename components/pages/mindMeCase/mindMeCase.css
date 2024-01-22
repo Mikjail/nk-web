@@ -28,6 +28,10 @@
   width: 21.4375rem;
 }
 
+.mind-me-case__btn:hover {
+  background-color: #324336;
+}
+
 .cases__sections--margin {
   margin-top: 0;
 }
