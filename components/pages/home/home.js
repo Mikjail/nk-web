@@ -1,7 +1,6 @@
 import { MindMe } from "./mindMe/mindMe.js";
 import { Beanifesto } from "./beanifesto/beanifesto.js";
 import { ITravel } from "./iTravel/iTravel.js";
-import { Form } from "../../modal/form/form.js";
 
 export const Home = () => /*html*/ `
 <section class="landing-page">
@@ -17,10 +16,9 @@ export const Home = () => /*html*/ `
         alt="Arrow down"
         class="arrow"
       />
-  </a>
-  </div>
-  </section>
-  <section id="case-studies">
+    </a>
+</section>
+<section id="case-studies">
   ${MindMe()}
   ${Beanifesto()}
   ${ITravel()}
