@@ -45,14 +45,9 @@ export const onSubmitEmail = (e) => {
 };
 
 
-if(window.matchMedia("(max-width: 430px)").matches) {
-  document
-    .getElementById("contact-form-xs")
-    .addEventListener("submit", onSubmitEmail);
-} else {
+if(!window.matchMedia("(max-width: 430px)").matches) {
   document
   .getElementById("contact-form")
   .addEventListener("submit", onSubmitEmail);
 }
-  
 

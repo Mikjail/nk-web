@@ -1,4 +1,16 @@
-window.onload = function () {
+const activeRoute = (navLinks, route) => {
+  navLinks.forEach(function (link) {
+    if (link.getAttribute("href") === route) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+    
+  if (route === "" || route === "#contact") {
+    navLinks[0].classList.add("active");
+  }
+};
   const navLinks = document.querySelectorAll(".nav-link");
   const initialRoute = window.location.hash;
   // when route first init
@@ -9,20 +21,6 @@ window.onload = function () {
     const currentRoute = window.location.hash;
     activeRoute(navLinks, currentRoute);
   });
-};
-
-const activeRoute = (navLinks, route) => {
-  navLinks.forEach(function (link) {
-    if (link.getAttribute("href") === route) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
-  });
-  if (route === "" || route === "#contact") {
-    navLinks[0].classList.add("active");
-  }
-};
 
 window.onload = function () {
   if (window.matchMedia("(max-width: 430px)")) {

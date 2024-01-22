@@ -36,6 +36,9 @@
   #contact-form-mobile {
     display: block;
   }
+  .modal-header {
+    padding-top: 5rem;
+  }
 
   .modal-header__close {
     display: none;

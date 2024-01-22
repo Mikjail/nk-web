@@ -5,6 +5,8 @@ import { mindMeCase } from "../components/pages/mindMeCase/mindMeCase.js";
 import { BeanifestoCase } from "../components/pages/beanifestoCase/beanifesto.js";
 import { iTravelCase } from "../components/pages/iTravelCase/itravelcase.js";
 import { Footer } from "../components/footer/footer.js";
+import { Modal } from "../components/modal/modal.js";
+import { onSubmitEmail } from "./email.js";
 
 const routes = {
   "/": {
@@ -37,6 +39,11 @@ const routes = {
     title: "NK - iTravel",
     description: "This is the iTravel page",
   },
+  contact: {
+    template: `<div id="contact-form-mobile">${Modal()}</div>`,
+    title: "NK - iTravel",
+    description: "This is the Contact Form page",
+  },
 };
 
 const locationHandler = async () => {
@@ -55,8 +62,12 @@ const locationHandler = async () => {
   // get the html from the template
   const html = route.template;
 
-  // get the content div
-  const contentDiv = document.getElementById("content");
+    // get the content div
+    const contentDiv = document.getElementById("content");
+  
+  //only on desktop
+  if (!window.matchMedia("(max-width: 430px)").matches) {
+  
 
   // add the fade class to start the fade-out transition
   contentDiv.classList.add("fade");
@@ -89,6 +100,15 @@ const locationHandler = async () => {
 
   // remove the fade and show classes
   contentDiv.classList.remove("fade", "show");
+  } else {
+    contentDiv.innerHTML = html;
+  }
+
+  if(location === 'contact') {
+    document
+    .getElementById("contact-form")
+    .addEventListener("submit", onSubmitEmail);
+  }
 
   // set the title of the document to the title of the route
   document.title = route.title;

@@ -58,9 +58,10 @@
   .case-study {
     flex-direction: column;
     height: auto;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
     gap: 1rem;
     padding: 0 1rem;
+    display: flex;
   }
   .landing-page {
     padding-top: 10%;
@@ -80,11 +81,6 @@
     width: 1rem;
     height: 1rem;
     margin-left: 0.5rem;
-  }
-
-  .case-study {
-    display: flex;
-    flex-direction: column;
   }
 
   .image-cases {

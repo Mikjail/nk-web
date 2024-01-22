@@ -45,4 +45,8 @@
   .custom-btn.secondary {
     display: none;
   }
+
+  .mind-me {
+    padding-top: 6rem;
+  }
 }
