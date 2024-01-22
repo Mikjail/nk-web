@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function i(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(s){if(s.ep)return;s.ep=!0;const t=i(s);fetch(s.href,t)}})();const _=()=>`
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function i(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(s){if(s.ep)return;s.ep=!0;const t=i(s);fetch(s.href,t)}})();const v=()=>`
     <nav class="navbar">
       <div class="logo">
         <a href="/#">
@@ -98,7 +98,7 @@
         <img src="/assets/okey.svg" alt="">
         <h2 class="msge-sent__great">Great!</h2>
         <p class="msge-sent__msge">Your message was successfully sent.</p>
-        <button class="custom-btn secondary msge-sent__btn" id="ok-btn">Ok</button>
+        <button class="custom-btn secondary msge-sent__btn" id="ok-btn">OK</button>
     </div>
     `,g=()=>`
         <div class="modal-header">
@@ -117,7 +117,7 @@
      <div class="pop-up__footer">
         <button id="pop-up__close" class="pop-up__close-btn">Close</button>
      </div>
-`;document.getElementById("nav").innerHTML=_();document.getElementById("footer").innerHTML=p();document.getElementById("mobile-dialog").innerHTML=b();window.matchMedia("(max-width: 430px)").matches?document.getElementById("contact-form-mobile").innerHTML=g():document.getElementById("dialog-form").innerHTML=g();window.onload=function(){const e=document.querySelectorAll(".nav-link"),a=window.location.hash;h(e,a),window.addEventListener("hashchange",function(){const i=window.location.hash;h(e,i)})};const h=(e,a)=>{e.forEach(function(i){i.getAttribute("href")===a?i.classList.add("active"):i.classList.remove("active")}),(a===""||a==="#contact")&&e[0].classList.add("active")};window.onload=function(){if(window.matchMedia("(max-width: 430px)")){const e=document.querySelector(".menuToggle input");document.querySelectorAll(".menuToggle a").forEach(i=>{i.addEventListener("click",()=>{e.click()})})}};const c=({text:e,href:a,variant:i,className:n,target:s})=>`
+`;document.getElementById("nav").innerHTML=v();document.getElementById("footer").innerHTML=p();document.getElementById("mobile-dialog").innerHTML=b();window.matchMedia("(max-width: 430px)").matches?document.getElementById("contact-form-mobile").innerHTML=g():document.getElementById("dialog-form").innerHTML=g();window.onload=function(){const e=document.querySelectorAll(".nav-link"),a=window.location.hash;h(e,a),window.addEventListener("hashchange",function(){const i=window.location.hash;h(e,i)})};const h=(e,a)=>{e.forEach(function(i){i.getAttribute("href")===a?i.classList.add("active"):i.classList.remove("active")}),(a===""||a==="#contact")&&e[0].classList.add("active")};window.onload=function(){if(window.matchMedia("(max-width: 430px)")){const e=document.querySelector(".menuToggle input");document.querySelectorAll(".menuToggle a").forEach(i=>{i.addEventListener("click",()=>{e.click()})})}};const c=({text:e,href:a,variant:i,className:n,target:s})=>`
         <a class="custom-btn ${n} ${i}" href="${a}" target="${s||"_self"}">${e}</a>
     `,w=()=>`
 <section class="mind-me case-study xl">
@@ -172,19 +172,22 @@
       focused on creating exclusive user experience through research and a deep
       understanding of user needs
     </h3>
-    <div class="main-text">
+    <a class="main-text" href="#case-studies">
       <h4>My case studies</h4>
       <img
         src="assets/arrow-down-bold.svg"
         alt="Arrow down"
         class="arrow"
       />
+  </a>
   </div>
   </section>
+  <section id="case-studies">
   ${w()}
   ${I()}
   ${k()}
- `,T=()=>`
+</section>
+ `,E=()=>`
 <div>
   <div class="container">
     <div class="image-container">
@@ -217,11 +220,11 @@
     </div>
   </div>
 </div>
-`,E=()=>`
+`,T=()=>`
 <div class="resume">
    <h1>Page in construction 🛠️</h1>
 </div>
-`,M=()=>`
+`,A=()=>`
 <section class="mind-me-case xl">
     <img class="mind-me-case__img" src="assets/mindMeCase.svg" alt="">
     <div class="mind-me-case__right">
@@ -231,7 +234,7 @@
         health support for individuals and help them navigate and overcome 
         different mental health issues effectively
         </p>
-        ${c({text:"Prototype",href:"/",variant:"case1-green",className:"mind-me-case__btn"})}
+        ${c({text:"Prototype",href:"https://www.figma.com/proto/flIEX75m8Eqz9XkA74WUrK/Capstone-Project---MindMe---Anastasiia?page-id=121%3A7&type=design&node-id=135-131&viewport=480%2C259%2C0.14&t=PrbqBrkjkxWG4kJn-1&scaling=scale-down&starting-point-node-id=135%3A131&show-proto-sidebar=1&mode=design",variant:"case1-green",className:"mind-me-case__btn",target:"_blank"})}
     </div>
 </section>
 
@@ -360,7 +363,7 @@
       
   </div>
 </section>
-`,A=()=>`
+`,M=()=>`
 
 <section class="beanifesto-case__main xl">
 <img class="beanifesto-case-name__img" src="assets/beanifesto-name.svg" alt="App Name">
@@ -597,4 +600,4 @@
   </div>
 </section>
 
-`,m={"/":{template:x(),title:"NK - Home",description:"This is the home page"},about:{template:T(),title:"NK - About",description:"This is the about page"},resume:{template:E(),title:"NK - Resume",description:"This is the resume page"},"mind-me":{template:M(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:A(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:S(),title:"NK - iTravel",description:"This is the iTravel page"}},f=async()=>{var e=window.location.hash.replace("#","");e.length==0&&(e="/",window.history.replaceState({},document.title,"."));const a=m[e]||m["/"],i=a.template,n=document.getElementById("content");n.classList.add("fade"),await new Promise(t=>setTimeout(t,200));const s=document.getElementById("footer");n.innerHTML="",s.innerHTML="",await new Promise(t=>setTimeout(t,100)),n.innerHTML=i,s.innerHTML=p(),n.classList.add("show"),await new Promise(t=>setTimeout(t,200)),n.classList.remove("fade","show"),document.title=a.title};window.addEventListener("hashchange",f);f();const L=document.getElementById("contact-btn"),r=document.getElementById("dialog-form"),v=document.getElementById("close-btn"),l=document.getElementById("mobile-dialog"),R=document.getElementById("pop-up__close");L.addEventListener("click",async()=>{r.showModal(),document.getElementById("modal-content").innerHTML=u(),document.getElementById("contact-form").addEventListener("submit",d),v.addEventListener("click",()=>{r.close()})});document.addEventListener("click",e=>{e.target===r&&r.close(),e.target===l&&l.close()});document.addEventListener("click",e=>{e.target===v&&r.close(),e.target===R&&l.close()});const j="template_1td30hg",B="service_01wo9w7",C="TzZMlShXkbi54loJf",d=e=>{e.preventDefault();const a=e.target,i=new FormData(a),{name:n,email:s,message:t}=Object.fromEntries(i.entries());emailjs.send(B,j,{from_name:n,to_name:"Anastasiia",from_email:s,message:t},C).then(function(o){console.log("SUCCESS!",o.status,o.text)},function(o){console.log("FAILED...",o)}),window.matchMedia("(max-width: 430px)").matches?document.getElementById("mobile-dialog").showModal():(document.getElementById("modal-content").innerHTML=y(),document.querySelector(".msge-sent__btn").addEventListener("click",function(){r.close()})),a.reset()};window.matchMedia("(max-width: 430px)").matches?document.getElementById("contact-form-xs").addEventListener("submit",d):document.getElementById("contact-form").addEventListener("submit",d);
+`,m={"/":{template:x(),title:"NK - Home",description:"This is the home page"},about:{template:E(),title:"NK - About",description:"This is the about page"},resume:{template:T(),title:"NK - Resume",description:"This is the resume page"},"mind-me":{template:A(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:M(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:S(),title:"NK - iTravel",description:"This is the iTravel page"}},f=async()=>{var e=window.location.hash.replace("#","");e.length==0&&(e="/",window.history.replaceState({},document.title,"."));const a=m[e]||m["/"],i=a.template,n=document.getElementById("content");n.classList.add("fade"),await new Promise(t=>setTimeout(t,200));const s=document.getElementById("footer");n.innerHTML="",s.innerHTML="",await new Promise(t=>setTimeout(t,100)),n.innerHTML=i,s.innerHTML=p(),n.classList.add("show"),await new Promise(t=>setTimeout(t,200)),n.classList.remove("fade","show"),document.title=a.title};window.addEventListener("hashchange",f);f();const L=document.getElementById("contact-btn"),r=document.getElementById("dialog-form"),_=document.getElementById("close-btn"),l=document.getElementById("mobile-dialog"),R=document.getElementById("pop-up__close");L.addEventListener("click",async()=>{r.showModal(),document.getElementById("modal-content").innerHTML=u(),document.getElementById("contact-form").addEventListener("submit",d),_.addEventListener("click",()=>{r.close()})});document.addEventListener("click",e=>{e.target===r&&r.close(),e.target===l&&l.close()});document.addEventListener("click",e=>{e.target===_&&r.close(),e.target===R&&l.close()});const j="template_1td30hg",C="service_01wo9w7",B="TzZMlShXkbi54loJf",d=e=>{e.preventDefault();const a=e.target,i=new FormData(a),{name:n,email:s,message:t}=Object.fromEntries(i.entries());emailjs.send(C,j,{from_name:n,to_name:"Anastasiia",from_email:s,message:t},B).then(function(o){console.log("SUCCESS!",o.status,o.text)},function(o){console.log("FAILED...",o)}),window.matchMedia("(max-width: 430px)").matches?document.getElementById("mobile-dialog").showModal():(document.getElementById("modal-content").innerHTML=y(),document.querySelector(".msge-sent__btn").addEventListener("click",function(){r.close()})),a.reset()};window.matchMedia("(max-width: 430px)").matches?document.getElementById("contact-form-xs").addEventListener("submit",d):document.getElementById("contact-form").addEventListener("submit",d);
