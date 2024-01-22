@@ -12,9 +12,10 @@ export const mindMeCase = () => /*html*/ `
         </p>
         ${Button({
           text: "Prototype",
-          href: "/",
+          href: "https://www.figma.com/proto/flIEX75m8Eqz9XkA74WUrK/Capstone-Project---MindMe---Anastasiia?page-id=121%3A7&type=design&node-id=135-131&viewport=480%2C259%2C0.14&t=PrbqBrkjkxWG4kJn-1&scaling=scale-down&starting-point-node-id=135%3A131&show-proto-sidebar=1&mode=design",
           variant: "case1-green",
           className: "mind-me-case__btn",
+          target: "_blank",
         })}
     </div>
 </section>

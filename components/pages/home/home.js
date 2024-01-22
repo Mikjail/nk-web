@@ -10,7 +10,7 @@ export const Home = () => /*html*/ `
       focused on creating exclusive user experience through research and a deep
       understanding of user needs
     </h3>
-    <div class="main-text">
+    <div class="main-text" onclick="document.getElementById('case-studies').scrollIntoView({ behavior: 'smooth' }); window.scrollBy(0, -offset);">
       <h4>My case studies</h4>
       <img
         src="assets/arrow-down-bold.svg"
@@ -19,7 +19,9 @@ export const Home = () => /*html*/ `
       />
   </div>
   </section>
+  <section id="case-studies">
   ${MindMe()}
   ${Beanifesto()}
   ${ITravel()}
+</section>
  `;

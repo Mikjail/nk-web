@@ -1,30 +1,29 @@
 .msge-sent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .msge-sent__great,
 .msge-sent__btn {
-    margin-top: 3.5rem;
+  margin-top: 3.5rem;
 }
 
 .msge-sent img {
-    width: 5rem;   
+  width: 4rem;
 }
 
 .msge-sent__great {
-    font-size: var(--heading2);
+  font-size: var(--heading3);
 }
 
 .msge-sent__msge {
-    font-size: var( --heading4);
-    margin-top: 1.75rem;
+  font-size: var(--body);
+  font-weight: var(--semi-bold);
+  margin-top: 1.75rem;
 }
 
 .msge-sent__btn {
-    border: none;
+  border: none;
 }
-
-
