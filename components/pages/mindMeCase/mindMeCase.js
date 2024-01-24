@@ -135,7 +135,8 @@ export const mindMeCase = () => /*html*/ `
 </section>
 
 <section>
-<div class="back-to-top xl">
+<div class="back-to-top xl"
+onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
 <img
         src="assets/arrow-up-bold.svg"
         alt="Arrow up"
