@@ -40,3 +40,7 @@
   font-weight: var(--bold);
   font-size: 1.125rem;
 }
+
+.pop-up__close-btn:focus {
+  outline: none;
+}

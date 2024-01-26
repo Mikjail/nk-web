@@ -4,8 +4,6 @@ export const dialog = document.getElementById("dialog-form");
 const contactButton = document.getElementById("contact-btn");
 const closeDialogButton = document.getElementById("close-btn");
 const mobileDialog = document.getElementById("mobile-dialog");
-const mobileDialogCloseButton = document.getElementById("pop-up__close");
-const caseStudies = document.querySelectorAll(".case-study");
 
 export const closeDialog = () => {
   dialog.close();
@@ -19,7 +17,7 @@ export const initCaseStudyDialog = () => {
       mobileDialog.showModal();
     });
   });
-}
+};
 
 contactButton.addEventListener("click", async () => {
   dialog.showModal();
@@ -35,20 +33,18 @@ contactButton.addEventListener("click", async () => {
 initCaseStudyDialog();
 
 document.addEventListener("click", (e) => {
+  const mobileDialogCloseButton = document.getElementById("pop-up__close");
+
   if (e.target === dialog) {
     dialog.close();
   }
-  if(e.target === mobileDialog) {
+  if (e.target === mobileDialog) {
     mobileDialog.close();
   }
-});
-
-document.addEventListener("click", (e) => {
   if (e.target === closeDialogButton) {
     dialog.close();
   }
-  if(e.target === mobileDialogCloseButton) {
+  if (e.target == mobileDialogCloseButton) {
     mobileDialog.close();
   }
 });
-
