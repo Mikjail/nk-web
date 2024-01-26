@@ -1,5 +1,6 @@
 import { MsgSent } from "../components/modal/msg-sent/msgSent";
 import { dialog } from "./dialog";
+import { PopUp } from "../components/pop-up/popUp";
 
 const EMAILJS_TEMPLATE_ID = "template_1td30hg";
 const EMAILJS_SERVICE_ID = "service_01wo9w7";
@@ -32,6 +33,7 @@ export const onSubmitEmail = (e) => {
     );
   if(window.matchMedia("(max-width: 430px)").matches) {
     const dialog = document.getElementById("mobile-dialog");
+    dialog.innerHTML = PopUp();
     dialog.showModal();
   } else {
     document.getElementById("modal-content").innerHTML = MsgSent();

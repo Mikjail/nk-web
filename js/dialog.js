@@ -1,14 +1,25 @@
 import { Form } from "../components/modal/form/form.js";
 import { onSubmitEmail } from "./email.js";
-const contactButton = document.getElementById("contact-btn");
 export const dialog = document.getElementById("dialog-form");
+const contactButton = document.getElementById("contact-btn");
 const closeDialogButton = document.getElementById("close-btn");
 const mobileDialog = document.getElementById("mobile-dialog");
 const mobileDialogCloseButton = document.getElementById("pop-up__close");
+const caseStudies = document.querySelectorAll(".case-study");
 
 export const closeDialog = () => {
   dialog.close();
 };
+
+export const initCaseStudyDialog = () => {
+  const mobileDialog = document.getElementById("mobile-dialog");
+  const caseStudies = document.querySelectorAll(".case-study");
+  caseStudies.forEach((study) => {
+    study.addEventListener("click", () => {
+      mobileDialog.showModal();
+    });
+  });
+}
 
 contactButton.addEventListener("click", async () => {
   dialog.showModal();
@@ -20,6 +31,8 @@ contactButton.addEventListener("click", async () => {
     dialog.close();
   });
 });
+
+initCaseStudyDialog();
 
 document.addEventListener("click", (e) => {
   if (e.target === dialog) {
@@ -38,3 +51,4 @@ document.addEventListener("click", (e) => {
     mobileDialog.close();
   }
 });
+

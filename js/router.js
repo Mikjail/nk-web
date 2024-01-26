@@ -7,6 +7,7 @@ import { iTravelCase } from "../components/pages/iTravelCase/itravelcase.js";
 import { Footer } from "../components/footer/footer.js";
 import { Modal } from "../components/modal/modal.js";
 import { onSubmitEmail } from "./email.js";
+import { initCaseStudyDialog } from "./dialog.js";
 
 const routes = {
   "/": {
@@ -102,6 +103,7 @@ const locationHandler = async () => {
   contentDiv.classList.remove("fade", "show");
   } else {
     contentDiv.innerHTML = html;
+    initCaseStudyDialog();
   }
 
   if(location === 'contact') {
@@ -109,7 +111,6 @@ const locationHandler = async () => {
     .getElementById("contact-form")
     .addEventListener("submit", onSubmitEmail);
   }
-
   // set the title of the document to the title of the route
   document.title = route.title;
 };
