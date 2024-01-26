@@ -1,6 +1,6 @@
 export const PopUpCase = () => /*html*/ `
        <div class="pop-up__header">
-       Case Study Access
+       Case study access
      </div>
      <div class="pop-up__body">
      Apologies, all case studies are only available on <strong>desktop view.</strong> For the best experience, please view them on a desktop.
