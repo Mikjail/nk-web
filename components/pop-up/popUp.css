@@ -1,4 +1,5 @@
 #mobile-dialog {
+  width: 70%;
   margin: auto;
   border: 0;
   border-radius: 0.875rem;
@@ -35,10 +36,6 @@
 .pop-up__close-btn {
   border: none;
   background: none;
-}
-
-.pop-up__close-btn:focus {
-  outline: none;
   color: var(--main-green);
   font-weight: var(--bold);
   font-size: 1.125rem;
