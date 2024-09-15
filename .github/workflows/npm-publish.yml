@@ -25,6 +25,7 @@ jobs:
       - run: npm run build
       - name: Commit and push changes
         run: |
+          git credential-cache exit
           git config --global user.name 'MikjailS'
           git config --global user.email 'mikjailsalazar@gmail.com'
           git add -A
