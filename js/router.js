@@ -7,7 +7,8 @@ import { iTravelCase } from "../components/pages/iTravelCase/itravelcase.js";
 import { Footer } from "../components/footer/footer.js";
 import { Modal } from "../components/modal/modal.js";
 import { onSubmitEmail } from "./email.js";
-import { initCaseStudyDialog } from "./dialog.js";
+import { initCaseStudyDialog } from "./dialog.js";  
+import { OnefootballCase } from "../components/pages/oneFootballCase/oneFootballCase.js";
 
 const routes = {
   "/": {
@@ -24,6 +25,11 @@ const routes = {
     template: Resume(),
     title: "NK - Resume",
     description: "This is the resume page",
+  },
+  'onefootball': {
+    template: OnefootballCase(),
+    title: "NK - Resume",
+    description: "Onefootball - Case Study",
   },
   "mind-me": {
     template: mindMeCase(),
