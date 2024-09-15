@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const a of s)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function i(s){const a={};return s.integrity&&(a.integrity=s.integrity),s.referrerPolicy&&(a.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?a.credentials="include":s.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function n(s){if(s.ep)return;s.ep=!0;const a=i(s);fetch(s.href,a)}})();const w=()=>`
-========
 (function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))i(s);new MutationObserver(s=>{for(const a of s)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&i(o)}).observe(document,{childList:!0,subtree:!0});function n(s){const a={};return s.integrity&&(a.integrity=s.integrity),s.referrerPolicy&&(a.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?a.credentials="include":s.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function i(s){if(s.ep)return;s.ep=!0;const a=n(s);fetch(s.href,a)}})();const w=()=>`
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
     <nav class="navbar">
       <div class="logo">
         <a href="/#">
@@ -121,13 +117,8 @@
      <div class="pop-up__footer">
         <button id="pop-up__close" class="pop-up__close-btn">Close</button>
      </div>
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-`;document.getElementById("nav").innerHTML=w();document.getElementById("footer").innerHTML=d();document.getElementById("mobile-dialog").innerHTML=u();window.matchMedia("(max-width: 430px)").matches||(document.getElementById("dialog-form").innerHTML=m());const f=(e,t)=>{e.forEach(function(i){i.getAttribute("href")===t?i.classList.add("active"):i.classList.remove("active")}),(t===""||t==="#contact")&&e[0].classList.add("active")},_=document.querySelectorAll(".nav-link"),k=window.location.hash;f(_,k);window.addEventListener("hashchange",function(){const e=window.location.hash;f(_,e)});window.onload=function(){if(window.matchMedia("(max-width: 430px)")){const e=document.querySelector(".menuToggle input");document.querySelectorAll(".menuToggle a").forEach(i=>{i.addEventListener("click",()=>{e.click()})})}};const c=({text:e,href:t,variant:i,className:n,target:s})=>`
-        <a class="custom-btn ${n} ${i}" href="${t}" target="${s||"_self"}">${e}</a>
-========
 `;document.getElementById("nav").innerHTML=w();document.getElementById("footer").innerHTML=d();document.getElementById("mobile-dialog").innerHTML=u();window.matchMedia("(max-width: 430px)").matches||(document.getElementById("dialog-form").innerHTML=m());const f=(e,t)=>{e.forEach(function(n){n.getAttribute("href")===t?n.classList.add("active"):n.classList.remove("active")}),(t===""||t==="#contact")&&e[0].classList.add("active")},v=document.querySelectorAll(".nav-link"),k=window.location.hash;f(v,k);window.addEventListener("hashchange",function(){const e=window.location.hash;f(v,e)});window.onload=function(){if(window.matchMedia("(max-width: 430px)")){const e=document.querySelector(".menuToggle input");document.querySelectorAll(".menuToggle a").forEach(n=>{n.addEventListener("click",()=>{e.click()})})}};const c=({text:e,href:t,variant:n,className:i,target:s})=>`
         <a class="custom-btn ${i} ${n}" href="${t}" target="${s||"_self"}">${e}</a>
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
     `,T=()=>`
 <section class="mind-me case-study xl">
   <div class="mind-me__right">
@@ -159,11 +150,7 @@
         </p>
         ${c({text:"View",href:"/#beanifesto",variant:"secondary"})}
     </div>
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-</section>`,x=()=>`
-========
 </section>`,E=()=>`
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 <section class="i-travel case-study xl">
   <div class="i-travel__right">
     <h1 class="i-travel__title main-title">ITravel</h1>
@@ -177,22 +164,6 @@
     ${c({text:"View",href:"#itravel",variant:"secondary"})}
   </div>
   <img class="image-cases" src="assets/i-travel.svg" alt="" class="i-travel__img"/>
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-</section>
-`,A=()=>`
-<section class="onefootball case-study xl">
-<img class="onefootball_image" src="assets/onefootball.jpg" alt="" class="onefootball__img"/>
-  <div class="onefootball__right">
-    <h1 class="onefootball__title main-title">OneFootball</h1>
-    <h2 class="onefootball__subtitle subtitle">Football Fan Engagement App</h2>
-    <p class="onefootball__description">
-    A mobile app offering real-time football news, live scores, match streaming, and personalized updates, connecting fans with their favorite teams and competitions worldwide.
-    </p>
-    <p class="onefootball__tags">Product Design | UI Design | Testing</p>
-    ${c({text:"View",href:"#onefootball",variant:"secondary"})}
-  </div>
-========
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 </section>
 `,M=()=>`
 <section class="onefootball case-study xl">
@@ -224,16 +195,12 @@
     </a>
 </section>
 <section id="case-studies">
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-  ${A()}
-========
   ${M()}
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
   ${T()}
   ${x()}
   ${E()}
 </section>
- `,S=()=>`
+ `,A=()=>`
 <div>
   <div class="container">
     <div class="image-container">
@@ -266,15 +233,11 @@
     </div>
   </div>
 </div>
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-`,L=()=>`
-========
 `,C=()=>`
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 <div class="resume">
    <h1>Page in construction 🛠️</h1>
 </div>
-`,R=()=>`
+`,L=()=>`
 <section class="mind-me-case xl">
     <img class="mind-me-case__img" src="assets/mindMeCase.svg" alt="">
     <div class="mind-me-case__right">
@@ -414,11 +377,7 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
       
   </div>
 </section>
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-`,C=()=>`
-========
 `,O=()=>`
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 
 <section class="beanifesto-case__main xl">
 <img class="beanifesto-case-name__img" src="assets/beanifesto-name.svg" alt="App Name">
@@ -543,11 +502,7 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
       
   </div>
 </section>
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-`,j=()=>`
-========
 `,P=()=>`
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 <section class="itravel__case xl">
     <h1 class="itravel__name">ITravel</h1>
     <h1 class="title__description title__description--itravel">A mobile app that helps users plan their trips and activities</h1>
@@ -661,11 +616,7 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
   </div>
 </section>
 
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-`,r=document.getElementById("dialog-form"),P=document.getElementById("contact-btn"),v=document.getElementById("close-btn"),l=document.getElementById("mobile-dialog"),y=()=>{const e=document.getElementById("mobile-dialog");e.innerHTML=u(),document.querySelectorAll(".case-study").forEach(i=>{i.addEventListener("click",()=>{e.showModal()})})};y();P.addEventListener("click",async()=>{r.showModal(),document.getElementById("modal-content").innerHTML=h(),document.getElementById("contact-form").addEventListener("submit",p),v.addEventListener("click",()=>{r.close()})});document.addEventListener("click",e=>{const t=document.getElementById("pop-up__close");e.target===r&&r.close(),e.target===l&&l.close(),e.target===v&&r.close(),e.target==t&&l.close()});const O=()=>`
-========
 `,r=document.getElementById("dialog-form"),R=document.getElementById("contact-btn"),_=document.getElementById("close-btn"),l=document.getElementById("mobile-dialog"),y=()=>{const e=document.getElementById("mobile-dialog");e.innerHTML=u(),document.querySelectorAll(".case-study").forEach(n=>{n.addEventListener("click",()=>{e.showModal()})})};y();R.addEventListener("click",async()=>{r.showModal(),document.getElementById("modal-content").innerHTML=h(),document.getElementById("contact-form").addEventListener("submit",g),_.addEventListener("click",()=>{r.close()})});document.addEventListener("click",e=>{const t=document.getElementById("pop-up__close");e.target===r&&r.close(),e.target===l&&l.close(),e.target===_&&r.close(),e.target==t&&l.close()});const j=()=>`
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
      <div class="pop-up__header">
         Thank you!
      </div>
@@ -675,13 +626,6 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
      <div class="pop-up__footer">
         <button id="pop-up__close" class="pop-up__close-btn">Close</button>
      </div>
-<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
-`,B="template_1td30hg",N="service_01wo9w7",U="TzZMlShXkbi54loJf",p=e=>{e.preventDefault();const t=e.target,i=new FormData(t),{name:n,email:s,message:a}=Object.fromEntries(i.entries());if(emailjs.send(N,B,{from_name:n,to_name:"Anastasiia",from_email:s,message:a},U).then(function(o){console.log("SUCCESS!",o.status,o.text)},function(o){console.log("FAILED...",o)}),window.matchMedia("(max-width: 430px)").matches){const o=document.getElementById("mobile-dialog");o.innerHTML=O(),o.showModal()}else document.getElementById("modal-content").innerHTML=I(),document.querySelector(".msge-sent__btn").addEventListener("click",function(){r.close()});t.reset()};window.matchMedia("(max-width: 430px)").matches||document.getElementById("contact-form").addEventListener("submit",p);const F=()=>`
-<div class="onefootball">
-   <h1>Page in construction 🛠️</h1>
-</div>
-`,g={"/":{template:M(),title:"NK - Home",description:"This is the home page"},about:{template:S(),title:"NK - About",description:"This is the about page"},resume:{template:L(),title:"NK - Resume",description:"This is the resume page"},onefootball:{template:F(),title:"NK - Resume",description:"Onefootball - Case Study"},"mind-me":{template:R(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:C(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:j(),title:"NK - iTravel",description:"This is the iTravel page"},contact:{template:`<div id="contact-form-mobile">${m()}</div>`,title:"NK - iTravel",description:"This is the Contact Form page"}},b=async()=>{var e=window.location.hash.replace("#","");e.length==0&&(e="/",window.history.replaceState({},document.title,"."));const t=g[e]||g["/"],i=t.template,n=document.getElementById("content");if(window.matchMedia("(max-width: 430px)").matches)n.innerHTML=i,y();else{n.classList.add("fade"),await new Promise(a=>setTimeout(a,200));const s=document.getElementById("footer");n.innerHTML="",s.innerHTML="",await new Promise(a=>setTimeout(a,100)),n.innerHTML=i,s.innerHTML=d(),n.classList.add("show"),await new Promise(a=>setTimeout(a,200)),n.classList.remove("fade","show")}e==="contact"&&document.getElementById("contact-form").addEventListener("submit",p),document.title=t.title};window.addEventListener("hashchange",b);b();
-========
 `,F="template_1td30hg",U="service_01wo9w7",B="TzZMlShXkbi54loJf",g=e=>{e.preventDefault();const t=e.target,n=new FormData(t),{name:i,email:s,message:a}=Object.fromEntries(n.entries());if(emailjs.send(U,F,{from_name:i,to_name:"Anastasiia",from_email:s,message:a},B).then(function(o){console.log("SUCCESS!",o.status,o.text)},function(o){console.log("FAILED...",o)}),window.matchMedia("(max-width: 430px)").matches){const o=document.getElementById("mobile-dialog");o.innerHTML=j(),o.showModal()}else document.getElementById("modal-content").innerHTML=I(),document.querySelector(".msge-sent__btn").addEventListener("click",function(){r.close()});t.reset()};window.matchMedia("(max-width: 430px)").matches||document.getElementById("contact-form").addEventListener("submit",g);const N=()=>`
 
 <section class="onefootball__case xl">
@@ -794,4 +738,3 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
 </section>
 
 `,p={"/":{template:S(),title:"NK - Home",description:"This is the home page"},about:{template:A(),title:"NK - About",description:"This is the about page"},resume:{template:C(),title:"NK - Resume",description:"This is the resume page"},onefootball:{template:N(),title:"NK - Resume",description:"Onefootball - Case Study"},"mind-me":{template:L(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:O(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:P(),title:"NK - iTravel",description:"This is the iTravel page"},contact:{template:`<div id="contact-form-mobile">${m()}</div>`,title:"NK - iTravel",description:"This is the Contact Form page"}},b=async()=>{var e=window.location.hash.replace("#","");e.length==0&&(e="/",window.history.replaceState({},document.title,"."));const t=p[e]||p["/"],n=t.template,i=document.getElementById("content");if(window.matchMedia("(max-width: 430px)").matches)i.innerHTML=n,y();else{i.classList.add("fade"),await new Promise(a=>setTimeout(a,200));const s=document.getElementById("footer");i.innerHTML="",s.innerHTML="",await new Promise(a=>setTimeout(a,100)),i.innerHTML=n,s.innerHTML=d(),i.classList.add("show"),await new Promise(a=>setTimeout(a,200)),i.classList.remove("fade","show")}e==="contact"&&document.getElementById("contact-form").addEventListener("submit",g),document.title=t.title};window.addEventListener("hashchange",b);b();
->>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
