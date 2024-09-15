@@ -1,6 +1,7 @@
 import { MindMe } from "./mindMe/mindMe.js";
 import { Beanifesto } from "./beanifesto/beanifesto.js";
 import { ITravel } from "./iTravel/iTravel.js";
+import { OneFootball } from "./oneFootball/oneFootball.js";
 
 export const Home = () => /*html*/ `
 <section class="landing-page">
@@ -19,6 +20,7 @@ export const Home = () => /*html*/ `
     </a>
 </section>
 <section id="case-studies">
+  ${OneFootball()}
   ${MindMe()}
   ${Beanifesto()}
   ${ITravel()}
