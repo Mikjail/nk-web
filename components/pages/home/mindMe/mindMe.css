@@ -14,10 +14,6 @@
   margin-bottom: 15px;
 }
 
-.mind-me {
-  padding-top: 10rem;
-}
-
 /* Styles for mobile devices */
 @media (max-width: 430px) {
   .mind-me__left {

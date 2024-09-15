@@ -7,16 +7,16 @@ export const About = () => /*html*/ `
     <div class="text-container">
       <h3>Hey there!</h3>
       <p class="regular-text">
-        I'm Anastasiia,
-        <strong>a UX/UI designer living in Berlin</strong>. My journey into
-        design began with a twist — I used to be a flight attendant! Through my
-        travels and interactions, I discovered a love for understanding people's
-        needs and making their experiences better.
-      </p>
+      I'm Anastasiia,
+      a <strong> Product Designer</strong>. My journey into design began with a 
+      twist — I used to be a flight attendant! Through my travels and
+      interactions, I discovered a love for understanding people's needs and
+      making their experiences better.
+    </p>
       <p class="regular-text">
         I believe in the power of
         <strong>simplicity and practicality</strong>, and I'm passionate about
-        blending these elements tocreate designs that are both
+        blending these elements to create designs that are both
         <strong>user-focused and visually appealing</strong>. I also believe
         that good design should be <strong>accessible to everyone</strong>, no
         matter their background or preferences.

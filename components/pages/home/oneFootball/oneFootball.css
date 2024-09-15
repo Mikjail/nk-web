@@ -1,3 +1,23 @@
-.one-football {
-    
+.onefootball__tags {
+  font-weight: var(--bold);
+  margin-bottom: 2.5rem;
+}
+
+.onefootball__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.onefootball__description {
+  margin-bottom: 15px;
+}
+
+.onefootball_image {
+  width: 400px;
+}
+
+.onefootball {
+  padding-top: 10rem;
 }

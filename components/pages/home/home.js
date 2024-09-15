@@ -6,7 +6,7 @@ import { OneFootball } from "./oneFootball/oneFootball.js";
 export const Home = () => /*html*/ `
 <section class="landing-page">
     <h3>
-      I am <span class="landing-page__strong">Berlin-based UX/UI designer</span>,
+      I am a <span class="landing-page__strong">Product Designer</span>,
       focused on creating exclusive user experience through research and a deep
       understanding of user needs
     </h3>
