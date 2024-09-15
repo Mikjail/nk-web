@@ -1,6 +1,28 @@
-.onefootball {
+.onefootball__case {
   display: flex;
-  height: 90vh;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cases__mockups {
+  max-width: 40%;
+  margin-top: 2rem;
+}
+
+.onefootball__name {
+  margin-top: 5rem;
+  font-size: 4rem;
+}
+
+.title__description--onefootball {
+  width: 30rem;
+  margin-top: 1.5rem;
+}
+
+.of_cases__img1--margin {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }

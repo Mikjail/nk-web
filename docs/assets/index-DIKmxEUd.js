@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 (function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const a of s)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function i(s){const a={};return s.integrity&&(a.integrity=s.integrity),s.referrerPolicy&&(a.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?a.credentials="include":s.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function n(s){if(s.ep)return;s.ep=!0;const a=i(s);fetch(s.href,a)}})();const w=()=>`
+========
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))i(s);new MutationObserver(s=>{for(const a of s)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&i(o)}).observe(document,{childList:!0,subtree:!0});function n(s){const a={};return s.integrity&&(a.integrity=s.integrity),s.referrerPolicy&&(a.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?a.credentials="include":s.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function i(s){if(s.ep)return;s.ep=!0;const a=n(s);fetch(s.href,a)}})();const w=()=>`
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
     <nav class="navbar">
       <div class="logo">
         <a href="/#">
@@ -117,8 +121,13 @@
      <div class="pop-up__footer">
         <button id="pop-up__close" class="pop-up__close-btn">Close</button>
      </div>
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 `;document.getElementById("nav").innerHTML=w();document.getElementById("footer").innerHTML=d();document.getElementById("mobile-dialog").innerHTML=u();window.matchMedia("(max-width: 430px)").matches||(document.getElementById("dialog-form").innerHTML=m());const f=(e,t)=>{e.forEach(function(i){i.getAttribute("href")===t?i.classList.add("active"):i.classList.remove("active")}),(t===""||t==="#contact")&&e[0].classList.add("active")},_=document.querySelectorAll(".nav-link"),k=window.location.hash;f(_,k);window.addEventListener("hashchange",function(){const e=window.location.hash;f(_,e)});window.onload=function(){if(window.matchMedia("(max-width: 430px)")){const e=document.querySelector(".menuToggle input");document.querySelectorAll(".menuToggle a").forEach(i=>{i.addEventListener("click",()=>{e.click()})})}};const c=({text:e,href:t,variant:i,className:n,target:s})=>`
         <a class="custom-btn ${n} ${i}" href="${t}" target="${s||"_self"}">${e}</a>
+========
+`;document.getElementById("nav").innerHTML=w();document.getElementById("footer").innerHTML=d();document.getElementById("mobile-dialog").innerHTML=u();window.matchMedia("(max-width: 430px)").matches||(document.getElementById("dialog-form").innerHTML=m());const f=(e,t)=>{e.forEach(function(n){n.getAttribute("href")===t?n.classList.add("active"):n.classList.remove("active")}),(t===""||t==="#contact")&&e[0].classList.add("active")},v=document.querySelectorAll(".nav-link"),k=window.location.hash;f(v,k);window.addEventListener("hashchange",function(){const e=window.location.hash;f(v,e)});window.onload=function(){if(window.matchMedia("(max-width: 430px)")){const e=document.querySelector(".menuToggle input");document.querySelectorAll(".menuToggle a").forEach(n=>{n.addEventListener("click",()=>{e.click()})})}};const c=({text:e,href:t,variant:n,className:i,target:s})=>`
+        <a class="custom-btn ${i} ${n}" href="${t}" target="${s||"_self"}">${e}</a>
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
     `,T=()=>`
 <section class="mind-me case-study xl">
   <div class="mind-me__right">
@@ -134,7 +143,7 @@
   </div>
   <img class="image-cases" src="assets/mind-me.svg" alt="" class="mind-me__img"/>
 </section>
-`,E=()=>`
+`,x=()=>`
 <section class="beanifesto case-study b-image-cases xl">
     <img class="image-cases beanifesto__img" src="assets/beanifesto.svg" alt="">
     <div class="beanifesto__left">
@@ -150,7 +159,11 @@
         </p>
         ${c({text:"View",href:"/#beanifesto",variant:"secondary"})}
     </div>
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 </section>`,x=()=>`
+========
+</section>`,E=()=>`
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 <section class="i-travel case-study xl">
   <div class="i-travel__right">
     <h1 class="i-travel__title main-title">ITravel</h1>
@@ -164,6 +177,7 @@
     ${c({text:"View",href:"#itravel",variant:"secondary"})}
   </div>
   <img class="image-cases" src="assets/i-travel.svg" alt="" class="i-travel__img"/>
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 </section>
 `,A=()=>`
 <section class="onefootball case-study xl">
@@ -177,8 +191,23 @@
     <p class="onefootball__tags">Product Design | UI Design | Testing</p>
     ${c({text:"View",href:"#onefootball",variant:"secondary"})}
   </div>
+========
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 </section>
 `,M=()=>`
+<section class="onefootball case-study xl">
+<img class="onefootball_image" src="assets/onefootball.jpg" alt="" class="onefootball__img"/>
+  <div class="onefootball__right">
+    <h1 class="onefootball__title main-title">OneFootball</h1>
+    <h2 class="onefootball__subtitle subtitle">Football Fan Engagement App</h2>
+    <p class="onefootball__description">
+    A mobile app offering real-time football news, live scores, match streaming, and personalized updates, connecting fans with their favorite teams and competitions worldwide.
+    </p>
+    <p class="onefootball__tags">Product Design | UI Design | Testing</p>
+    ${c({text:"View",href:"#onefootball",variant:"secondary"})}
+  </div>
+</section>
+`,S=()=>`
 <section class="landing-page">
     <h3>
       I am a <span class="landing-page__strong">Product Designer</span>,
@@ -195,10 +224,14 @@
     </a>
 </section>
 <section id="case-studies">
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
   ${A()}
+========
+  ${M()}
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
   ${T()}
-  ${E()}
   ${x()}
+  ${E()}
 </section>
  `,S=()=>`
 <div>
@@ -233,7 +266,11 @@
     </div>
   </div>
 </div>
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 `,L=()=>`
+========
+`,C=()=>`
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 <div class="resume">
    <h1>Page in construction 🛠️</h1>
 </div>
@@ -377,7 +414,11 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
       
   </div>
 </section>
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 `,C=()=>`
+========
+`,O=()=>`
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 
 <section class="beanifesto-case__main xl">
 <img class="beanifesto-case-name__img" src="assets/beanifesto-name.svg" alt="App Name">
@@ -502,7 +543,11 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
       
   </div>
 </section>
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 `,j=()=>`
+========
+`,P=()=>`
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
 <section class="itravel__case xl">
     <h1 class="itravel__name">ITravel</h1>
     <h1 class="title__description title__description--itravel">A mobile app that helps users plan their trips and activities</h1>
@@ -616,7 +661,11 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
   </div>
 </section>
 
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 `,r=document.getElementById("dialog-form"),P=document.getElementById("contact-btn"),v=document.getElementById("close-btn"),l=document.getElementById("mobile-dialog"),y=()=>{const e=document.getElementById("mobile-dialog");e.innerHTML=u(),document.querySelectorAll(".case-study").forEach(i=>{i.addEventListener("click",()=>{e.showModal()})})};y();P.addEventListener("click",async()=>{r.showModal(),document.getElementById("modal-content").innerHTML=h(),document.getElementById("contact-form").addEventListener("submit",p),v.addEventListener("click",()=>{r.close()})});document.addEventListener("click",e=>{const t=document.getElementById("pop-up__close");e.target===r&&r.close(),e.target===l&&l.close(),e.target===v&&r.close(),e.target==t&&l.close()});const O=()=>`
+========
+`,r=document.getElementById("dialog-form"),R=document.getElementById("contact-btn"),_=document.getElementById("close-btn"),l=document.getElementById("mobile-dialog"),y=()=>{const e=document.getElementById("mobile-dialog");e.innerHTML=u(),document.querySelectorAll(".case-study").forEach(n=>{n.addEventListener("click",()=>{e.showModal()})})};y();R.addEventListener("click",async()=>{r.showModal(),document.getElementById("modal-content").innerHTML=h(),document.getElementById("contact-form").addEventListener("submit",g),_.addEventListener("click",()=>{r.close()})});document.addEventListener("click",e=>{const t=document.getElementById("pop-up__close");e.target===r&&r.close(),e.target===l&&l.close(),e.target===_&&r.close(),e.target==t&&l.close()});const j=()=>`
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
      <div class="pop-up__header">
         Thank you!
      </div>
@@ -626,8 +675,123 @@ onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
      <div class="pop-up__footer">
         <button id="pop-up__close" class="pop-up__close-btn">Close</button>
      </div>
+<<<<<<<< HEAD:docs/assets/index-DIKmxEUd.js
 `,B="template_1td30hg",N="service_01wo9w7",U="TzZMlShXkbi54loJf",p=e=>{e.preventDefault();const t=e.target,i=new FormData(t),{name:n,email:s,message:a}=Object.fromEntries(i.entries());if(emailjs.send(N,B,{from_name:n,to_name:"Anastasiia",from_email:s,message:a},U).then(function(o){console.log("SUCCESS!",o.status,o.text)},function(o){console.log("FAILED...",o)}),window.matchMedia("(max-width: 430px)").matches){const o=document.getElementById("mobile-dialog");o.innerHTML=O(),o.showModal()}else document.getElementById("modal-content").innerHTML=I(),document.querySelector(".msge-sent__btn").addEventListener("click",function(){r.close()});t.reset()};window.matchMedia("(max-width: 430px)").matches||document.getElementById("contact-form").addEventListener("submit",p);const F=()=>`
 <div class="onefootball">
    <h1>Page in construction 🛠️</h1>
 </div>
 `,g={"/":{template:M(),title:"NK - Home",description:"This is the home page"},about:{template:S(),title:"NK - About",description:"This is the about page"},resume:{template:L(),title:"NK - Resume",description:"This is the resume page"},onefootball:{template:F(),title:"NK - Resume",description:"Onefootball - Case Study"},"mind-me":{template:R(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:C(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:j(),title:"NK - iTravel",description:"This is the iTravel page"},contact:{template:`<div id="contact-form-mobile">${m()}</div>`,title:"NK - iTravel",description:"This is the Contact Form page"}},b=async()=>{var e=window.location.hash.replace("#","");e.length==0&&(e="/",window.history.replaceState({},document.title,"."));const t=g[e]||g["/"],i=t.template,n=document.getElementById("content");if(window.matchMedia("(max-width: 430px)").matches)n.innerHTML=i,y();else{n.classList.add("fade"),await new Promise(a=>setTimeout(a,200));const s=document.getElementById("footer");n.innerHTML="",s.innerHTML="",await new Promise(a=>setTimeout(a,100)),n.innerHTML=i,s.innerHTML=d(),n.classList.add("show"),await new Promise(a=>setTimeout(a,200)),n.classList.remove("fade","show")}e==="contact"&&document.getElementById("contact-form").addEventListener("submit",p),document.title=t.title};window.addEventListener("hashchange",b);b();
+========
+`,F="template_1td30hg",U="service_01wo9w7",B="TzZMlShXkbi54loJf",g=e=>{e.preventDefault();const t=e.target,n=new FormData(t),{name:i,email:s,message:a}=Object.fromEntries(n.entries());if(emailjs.send(U,F,{from_name:i,to_name:"Anastasiia",from_email:s,message:a},B).then(function(o){console.log("SUCCESS!",o.status,o.text)},function(o){console.log("FAILED...",o)}),window.matchMedia("(max-width: 430px)").matches){const o=document.getElementById("mobile-dialog");o.innerHTML=j(),o.showModal()}else document.getElementById("modal-content").innerHTML=I(),document.querySelector(".msge-sent__btn").addEventListener("click",function(){r.close()});t.reset()};window.matchMedia("(max-width: 430px)").matches||document.getElementById("contact-form").addEventListener("submit",g);const N=()=>`
+
+<section class="onefootball__case xl">
+    <h1 class="onefootball__name">OneFootball</h1>
+    <h1 class="title__description title__description--onefootball">A mobile app for real-time football news, live scores, streaming, and personalized updates, connecting fans worldwide</h1>
+    <img class="cases__mockups" src="assets/onefootball-mockups.svg" alt="Screen Mockups" />
+</section>
+
+<section class="cases__sections xl">
+  <h4 class="cases__h4">INTRODUCTION</h4>
+    <p>This case study outlines the work I contributed to multiple product features and design system components for <strong>OneFootball app</strong>. My focus was on creating engaging user experiences, developing new features, and integrating them with our design system to ensure consistency and scalability.</p>
+  <h4 class="cases__h4">PROBLEM</h4>
+    <p>As <strong>OneFootball</strong> expanded its offerings, the app required new features to drive user engagement, improve retention, and enhance monetization. At the same time, maintaining design consistency across these new features was a challenge due to the growing complexity of the platform.</p>
+  <h4 class="cases__h4">SOLUTION</h4>
+    <p>I contributed to developing key features like <strong>a Loyalty Program, MatchXP, and a Marketplace</strong>, while ensuring the integration of new components into our <strong>design system (DS)</strong>. This approach not only improved the user experience but also aligned with the scalability and design consistency goals of the app.</p>
+</section>
+
+<img class="xl of_cases__img1--margin" src="assets/onefootball-ofc.svg" alt="OneFootball Club Logo Image">
+
+<section class="cases__sections xl">
+  <h4 class="cases__h4">LOYALTY PROGRAM</h4>
+    <p>The <strong>Loyalty Program</strong> was designed to reward users for engaging with OneFootball, driving retention and user satisfaction. I worked on several features that contributed to this program.</p>
+  <h4 class="cases__h4">Role</h4>
+    <p><strong>Team of 2:</strong> UI Design, User flows & Journeys, Wireframing, Gamification, QA.</p>
+    
+    <img class="cases__img1" src="assets/onefootball-OFC-image.svg" alt="OneFotball Club screens">
+  
+    <h4 class="cases__h4">Features</h4>
+  <ol>
+    <li><strong>Badges (February-March 2024):</strong> Introduced a badge system to recognize and reward user achievements and milestones, increasing motivation and engagement through visible rewards.</li>
+    <li><strong>Squads (Spring-Summer 2024):</strong> Enabled users to add up to 11 friends to their Squad, chat, and earn multiplied rewards. Squads can purchase discounted Squad-passes for PPV live streams. This feature builds micro-communities, encouraging users to invite friends, increasing engagement and adoption.</li>
+    <li><strong>OFC Scenes (June 2024):</strong> Created an interactive popup to introduce users to the upcoming Loyalty Program. This pre-launch feature encouraged users to join the waitlist and be among the first to access exclusive rewards, driving early engagement and anticipation.</li>
+    <li><strong>XP Conversion (August 2024):</strong> Developed the XP milestone system, where users unlock discount vouchers and exclusive offers upon reaching specific XP thresholds. This feature was designed to boost engagement by rewarding users for their activity, driving loyalty, and benefiting both users and participating merchants.</li>
+    <li><strong>Leaderboard Filters (August 2024):</strong> Designed a filter system using segmented control to allow users to view rankings by global, national, or team categories. This approach enhances engagement and motivation, ensuring fair and meaningful competition while preventing overcrowding in rankings.</li>
+    <li><strong>Newsletter Templates (September 2024):</strong> Developed customizable newsletter templates for loyalty program members, allowing personalized content delivery and improving communication with engaged users.</li>
+</ol>
+</section>
+
+<section class="cases__sections xl">
+    <h4 class="cases__h4">MATCH XP</h4>
+        <p><strong>MatchXP</strong> introduced a personalized match experience for users, offering real-time stats, video highlights, and interactive content around live football matches.</p>
+    <h4 class="cases__h4">Role</h4>
+        <p><strong>Team of 2:</strong> UI Design, User flows & Journeys, Wireframing, User Testing</p>
+    
+        <img class="of_cases__img1--margin" src="assets/onefootball-matchxp.svg" alt="OF MatchXP features"> 
+    
+        <h4 class="cases__h4">Features</h4>
+  <ol>
+    <li><strong>Match Stats (April 2024):</strong> Introduced comprehensive match statistics across various sections, including team pages, match pages, and player pages. This enhancement provided users with detailed analysis and insights into team performance, individual player stats, and overall match dynamics during live events.</li>
+    <li><strong>Line-up Sharing (April 2024):</strong> Improved the line-up sharing feature to enhance user experience. Instead of sharing a generic link, users now receive a visually appealing and shareable image of their selected line-up when they tap "Share" or attempt to screenshot the page. This special design ensures that users can effectively share their line-ups with friends and on social media.</li>
+    <li><strong>WSC Integration (March 2024):</strong> Integrated WSC’s static stories to provide users with pre-game content and updates. When a game starts, users receive static story updates that offer valuable insights and enhance the live match experience.</li>
+    <li><strong>Match Page Story (June 2024):</strong> Designed an entry point for interactive stories on match pages, enhancing user engagement by providing an immersive experience as users follow live matches.</li>
+    <li><strong>Live Match Carousel on Creator Pages (August 2024):</strong> Developed a carousel feature that showcases live match content on creators’ pages. This feature allows fans to easily track and engage with matches curated by their favorite creators, specifically before and during the game.</li>
+</ol>
+</section>
+
+<section class="cases__sections xl">
+    <h4 class="cases__h4">MARKETPLACE</h4>
+        <p><strong>The Marketplace feature</strong> aimed to streamline the purchase of football merchandise and content directly within the app, providing a frictionless buying experience for users.</p>
+    <h4 class="cases__h4">Role</h4>
+        <p><strong>Team of 2:</strong> UI Design, User flows & Journeys, Wireframing</p>
+    
+        <img class="of_cases__img1--margin" src="assets/onefootball-marketplace.svg" alt="OF Marketplace features"> 
+    
+        <h4 class="cases__h4">Features</h4>
+  <ol>
+    <li><strong>1-Click Purchase (May 2024):</strong> Simplified the purchasing process with a one-click feature, reducing friction and increasing sales conversions.</li>
+    <li><strong>Purchase History (May 2024):</strong> Developed a purchase history section where users could track and manage past transactions, adding transparency and enhancing user trust.</li>
+    <li><strong>Payment/Delivery Options (June 2024):</strong> Created flexible payment and delivery options, catering to a global audience and improving the overall checkout experience.</li>
+</ol>
+</section>
+
+<section class="cases__sections xl">
+    <h4 class="cases__h4">DESIGN SYSTEMS</h4>
+        <p>I contributed to OneFootball’s <strong>Design System</strong> by developing reusable components, ensuring design consistency across the app while enabling scalability for new features.</p>
+    <h4 class="cases__h4">Role</h4>
+        <p><strong>Team of 4:</strong> UI Design, User flows & Journeys, Wireframing, User Testing</p>
+    
+        <img class="of_cases__img1--margin" src="assets/onefootball-design-system.svg" alt="OF Design Systems components"> 
+    
+        <h4 class="cases__h4">Components</h4>
+  <ol>
+    <li><strong>Segmented Control:</strong> Designed a segmented control component to allow users to easily switch between different views and filters, providing a flexible navigation experience.</li>
+    <li><strong>List Item:</strong> Developed a standardized list item component for presenting a variety of content, including user data and other relevant information, in a consistent and clear manner.</li>
+    <li><strong>Stats Component:</strong> Created a stats component to present real-time match statistics, delivering crucial data to users during live games in an easily digestible format.</li>
+    <li><strong>Match Page Header:</strong> Designed the match page header to showcase key match information in a visually engaging and informative way, enhancing the overall user experience on the match page.</li>
+    <li><strong>Snackbar:</strong> Built a snackbar component for displaying brief notifications and feedback, improving user interaction without interrupting the app experience.</li>
+    <li><strong>Matches:</strong> OTT Card: Developed an OTT card component for quick access to match highlights and live streams, optimizing the viewing experience for mobile users.</li>
+</ol>
+</section>
+
+<section class="cases__sections xl">
+    <h4 class="cases__h4">CONCLUSION</h4>
+        <p>The development of these features and components significantly enhanced the user experience on <strong>OneFootball</strong> by driving engagement, improving retention, and streamlining the monetization process. Integrating these features into our design system ensured a consistent and scalable design approach across the platform.</p>
+    
+        <img class="of_cases__img1--margin" src="assets/OF.svg" alt="OF logo image"> 
+</section>
+
+<section>
+<div class="back-to-top xl"
+onclick= "window.scrollTo({ top: 0, behavior: 'smooth' });">
+<img
+        src="assets/arrow-up-bold.svg"
+        alt="Arrow up"
+        class="arrow1"
+      />
+      <h4>Back to top</h4>
+      
+  </div>
+</section>
+
+`,p={"/":{template:S(),title:"NK - Home",description:"This is the home page"},about:{template:A(),title:"NK - About",description:"This is the about page"},resume:{template:C(),title:"NK - Resume",description:"This is the resume page"},onefootball:{template:N(),title:"NK - Resume",description:"Onefootball - Case Study"},"mind-me":{template:L(),title:"NK - Resume",description:"MindMe - Case Study"},beanifesto:{template:O(),title:"NK - Beanifesto",description:"This is the beanifesto page"},itravel:{template:P(),title:"NK - iTravel",description:"This is the iTravel page"},contact:{template:`<div id="contact-form-mobile">${m()}</div>`,title:"NK - iTravel",description:"This is the Contact Form page"}},b=async()=>{var e=window.location.hash.replace("#","");e.length==0&&(e="/",window.history.replaceState({},document.title,"."));const t=p[e]||p["/"],n=t.template,i=document.getElementById("content");if(window.matchMedia("(max-width: 430px)").matches)i.innerHTML=n,y();else{i.classList.add("fade"),await new Promise(a=>setTimeout(a,200));const s=document.getElementById("footer");i.innerHTML="",s.innerHTML="",await new Promise(a=>setTimeout(a,100)),i.innerHTML=n,s.innerHTML=d(),i.classList.add("show"),await new Promise(a=>setTimeout(a,200)),i.classList.remove("fade","show")}e==="contact"&&document.getElementById("contact-form").addEventListener("submit",g),document.title=t.title};window.addEventListener("hashchange",b);b();
+>>>>>>>> c754545 (Adding OF case study):docs/assets/index-Dl5hgDf0.js
