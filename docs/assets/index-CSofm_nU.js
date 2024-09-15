@@ -166,8 +166,8 @@
   <img class="image-cases" src="assets/i-travel.svg" alt="" class="i-travel__img"/>
 </section>
 `,M=()=>`
-<section class="onefootball case-study xl">
-<img class="onefootball_image" src="assets/onefootball.jpg" alt="" class="onefootball__img"/>
+<section class="onefootball case-study b-image-cases xl">
+  <img class="onefootball_image" src="assets/onefootball.jpg" alt="" class="onefootball__img"/>
   <div class="onefootball__right">
     <h1 class="onefootball__title main-title">OneFootball</h1>
     <h2 class="onefootball__subtitle subtitle">Football Fan Engagement App</h2>
