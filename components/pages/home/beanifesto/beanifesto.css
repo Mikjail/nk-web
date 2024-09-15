@@ -32,6 +32,7 @@
 
   .beanifesto__tags {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .beanifesto__description {
@@ -40,6 +41,10 @@
 
   .custom-btn.secondary {
     display: none;
+  }
+
+  .benifesto {
+    padding-top: 2rem;
   }
 
   .b-image-cases {

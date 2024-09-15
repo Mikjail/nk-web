@@ -21,3 +21,45 @@
 .onefootball {
   padding-top: 10rem;
 }
+
+/* Styles for mobile devices */
+@media (max-width: 430px) {
+  .onefootball__left {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .onefootball__title {
+    font-size: 1.625rem;
+  }
+
+  .onefootball__subtitle {
+    font-size: 1.25rem;
+    color: #707070;
+  }
+
+  .onefootball__tags {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .onefootball__description {
+    font-size: 1rem;
+  }
+
+  .onefootball.secondary {
+    display: none;
+  }
+
+  .onefootball {
+    padding-top: 2rem;
+  }
+
+  .onefootball_image {
+    width: 205px;
+  }
+
+  .b-image-cases {
+    flex-direction: column-reverse;
+  }
+}

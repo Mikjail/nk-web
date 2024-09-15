@@ -36,6 +36,7 @@
 
   .i-travel__tags {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .i-travel__description {
@@ -44,6 +45,10 @@
 
   .i-travel {
     height: auto;
+  }
+
+  .i-travel {
+    padding-top: 2rem;
   }
 
   .custom-btn.secondary {
