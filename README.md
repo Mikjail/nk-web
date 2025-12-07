@@ -20,4 +20,4 @@ npm install
 npm run dev
 ```
 
-Happy coding!🐶
+Happy coding!🐶👸🏼
