@@ -24,16 +24,18 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Commit and push changes
+        env:
+          GIT_AUTHOR_NAME: MikjailS
+          GIT_AUTHOR_EMAIL: mikjailsalazar@gmail.com
+          GIT_COMMITTER_NAME: MikjailS
+          GIT_COMMITTER_EMAIL: mikjailsalazar@gmail.com
         run: |
-          git credential-cache exit
           git config --global user.name 'MikjailS'
           git config --global user.email 'mikjailsalazar@gmail.com'
-          git config --global credential.helper store
-          echo "https://${{ github.actor }}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
           git add -A
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             git commit -m "feat: Deploy new changes into docs"
-            git push
+            git push https://${{ github.actor }}:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
           fi
