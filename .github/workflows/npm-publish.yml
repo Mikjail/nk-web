@@ -28,6 +28,8 @@ jobs:
           git credential-cache exit
           git config --global user.name 'MikjailS'
           git config --global user.email 'mikjailsalazar@gmail.com'
+          git config --global credential.helper store
+          echo "https://${{ github.actor }}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
           git add -A
           if git diff --staged --quiet; then
             echo "No changes to commit"
